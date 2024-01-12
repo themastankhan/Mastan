@@ -1,0 +1,54 @@
+body {
+    margin: 0; /* Reset body margin to 0 */
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    flex-wrap: wrap;
+}
+
+
+.job-box {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 10px 5px; /* Added margin property for equal margins */
+}
+
+
+.job-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.job-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+
+.job-info-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666666;
+}
+
+
+.know-more {
+    background-color: #15c;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+}
