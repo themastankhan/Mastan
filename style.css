@@ -2,6 +2,15 @@ body {
     margin: 0; /* Reset body margin to 0 */
 }
 
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: 100;
+    color: #1c4587;
+    text-align: center;
+    padding: 0 10px; /* add this line */
+}
+h2 {font-family: Arial, Helvetica, sans-serif; font-size: 30; color: #1c4587; text-align: center;}
 
 .container {
     display: flex;
