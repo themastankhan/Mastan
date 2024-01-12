@@ -1,19 +1,23 @@
 body {
     margin: 0; /* Reset body margin to 0 */
 }
+
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 60px;
-    font-weight: 100;
+    font-style: normal;
     color: #1c4587;
     text-align: center;
     padding: 0 10px; /* add this line */
 }
+
 .container {
     display: flex;
     justify-content: space-around; /* Adjust as needed */
     flex-wrap: wrap;
 }
+
+
 .job-box {
     width: 300px;
     border: 1px solid #ccc;
@@ -22,20 +26,27 @@ h1 {
     font-family: Arial, sans-serif;
     margin: 10px 5px; /* Added margin property for equal margins */
 }
+
+
 .job-title {
     font-size: 24px;
     margin-bottom: 20px;
 }
+
 .job-info {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
 }
+
+
 .job-info-label {
     display: block;
     margin-bottom: 5px;
     color: #666666;
 }
+
+
 .know-more {
     background-color: #15c;
     color: #fff;
