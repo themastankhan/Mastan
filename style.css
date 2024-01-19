@@ -5,6 +5,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: white;
     }
 
     .header {
@@ -13,11 +14,11 @@ body {
         max-width: 300px;
         margin-top: -20px;
     }
-
+/* 
     header image {
         height: 400px;
         width: 400px;
-    }
+    } */
 
     #headerheading {
         font-size: 30px;
@@ -114,22 +115,63 @@ body {
     }
 }    
 
-    
+#location-filter {
+    margin-left: 13%;
+    margin-right: 15%;
+    margin-bottom: 10px;
+    /* appearance: none; */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 16px;
+    width: 300px;
+    option {
+      color: black;
+      background-color: white;
+      &:hover {
+        background-color: #f0f0f0;
+      }
+    }
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 2px 1px #4d90fe;
+    }
+  }
+   
+  
+  
 .container3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* changed from 'center' to 'space-around' */
     box-sizing: border-box;
     column-gap: 20px;
+    background-color: #fff;
     }
 
     .job-box {
-    border: 1px solid #ccc;
+    border: 5px solid #ccc;
     width: 350px;
     padding: 20px;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    box-shadow: 3px 3px 5px;
+    /* box-shadow: 3px 3px 3px 3px; */
+    }
+
+    .job-box {
+        border: 5px solid #ccc;
+        width: 350px;
+        padding: 20px;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        transition: transform 0.3s ease; /* Add a transition for a smooth animation */
+        z-index: 1; /* Set the initial z-index */
+    }
+    
+    .job-box:hover {
+        transform: scale(1.05); /* Zoom in slightly on hover */
+        z-index: 2; /* Set a higher z-index on hover to bring it forward */
     }
 
     .job-box {margin: 15px;}
@@ -155,19 +197,29 @@ body {
     }
 
 
-    .know-more {
-        background-color: #15c;
+    .button {
+        background-color: #007bff;
         color: #fff;
         border: none;
         padding: 8px 15px;
         border-radius: 4px;
         cursor: pointer;
         margin-top: 10px;
-        width: 100%;
+        /* width: 200%; */
         text-align: center;
         font-size: 15px;
         text-decoration: none;
     }
+
+    .button:hover {
+        background-color: #0056b3;
+      }
+
+      .job-box .button {
+        display: block;
+        margin: 0 auto;
+        width: 300px; /* Increase the width of the button */
+      }  
 
 
 .container2 {
@@ -265,10 +317,6 @@ footer {
 .icon-link:hover {
     color: #007bff;
    }
-
-.job-title:hover {
-    color: blue;
-}   
 
 .icon-link2:hover{
     color: green;
