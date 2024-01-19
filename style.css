@@ -170,20 +170,6 @@ body {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container2 {
     position: static;
     display: flex;
@@ -219,10 +205,10 @@ body {
     color: black;
    }
 
-   @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .footerheading {
-        font-size: 20px;
-        margin-bottom: 10px;
+        font-size: 17px;
+        margin-bottom: 7px;
     }
     .footercontent {
         font-size: 15px;
@@ -232,7 +218,7 @@ body {
 
 @media only screen and (max-width: 480px) {
     .footerheading {
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 10px;
     }
     .footercontent {
