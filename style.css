@@ -84,7 +84,7 @@ body {
 
 @media only screen and (max-width: 480px) {
     #hiringheadline {
-        font-size: 40px;
+        font-size: 20px;
     }
 }    
 
@@ -167,7 +167,7 @@ body {
     column-gap: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #f2f2f2;
+    background-color: #c9daf8;
     color: white;
     margin-top: 20px;
 }
