@@ -59,8 +59,6 @@ body {
 .hiringheader {
         margin-left: 15%;
         margin-right: 15%;
-        justify-content: center;
-        display: flex;
     }
 
 
@@ -69,22 +67,50 @@ body {
         font-weight: bold;
         font-size: 60px;
         text-align: center;
-        color: blue;
+        padding: 10px;
+        padding-bottom: 20px;
+        color: black;
         }
     
 #hiringheadline {
-    font-size: 50px;
+    font-size: 60px;
+    margin-bottom: 30px;
+    padding: 5px;
+    margin-top: 40px;
+    line-height: normal;
+}
+
+
+
+#hiringheadlinecontent {
+    text-align: center;
+    color: #1c4587;
+    font-size: 40px;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    line-height: normal;
 }
 
 @media only screen and (max-width: 768px) {
     #hiringheadline {
-        font-size: 20px;
+        font-size: 40px;
+        line-height: normal;
+    }
+    #hiringheadlinecontent {
+        font-size: 30px;
+        line-height: normal;
     }
 }
 
 @media only screen and (max-width: 480px) {
     #hiringheadline {
-        font-size: 30px;
+        font-size: 30Px;
+        line-height: normal;
+    }
+    #hiringheadlinecontent {
+        font-size: 20px;
+        line-height: normal;
     }
 }    
 
@@ -179,6 +205,7 @@ body {
     text-align: left;
     margin: 10px;
     color: black;
+    line-height: normal;
    }
    
    
@@ -191,6 +218,32 @@ body {
     margin: 10px;
     color: black;
    }
+
+   @media only screen and (max-width: 768px) {
+    .footerheading {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .footercontent {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .footerheading {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .footercontent {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .icon-link, .icon-link2 {
+        font-size: 1rem;
+    }
+}    
+
 
 
 footer { 
