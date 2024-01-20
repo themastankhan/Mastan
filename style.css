@@ -115,12 +115,20 @@ body {
     }
 }    
 
-#location-filter {
+
+.fitercontainer {
     display: flex;
     justify-content: center;
-    margin-left: 14%;
-    margin-right: 14%;
-    margin-bottom: 5px;
+
+}
+
+#location-filter {
+    display: flex;
+    justify-content: left;
+    /* margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5px; */
+    max-width: 350px;
     /* appearance: none; */
     background-color: white;
     border: 1px solid #ccc;
@@ -142,6 +150,8 @@ body {
       box-shadow: 0 0 2px 1px #4d90fe;
     } */
 }
+
+
    
   
   
