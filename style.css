@@ -118,27 +118,30 @@ body {
 #location-filter {
     display: flex;
     justify-content: center;
-    margin-left: 12.2%;
-    margin-right: 12.2%;
+    margin-left: 14%;
+    margin-right: 14%;
     margin-bottom: 5px;
     /* appearance: none; */
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 4px;
-    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-size: 16px;
     option {
       color: black;
       background-color: white;
-      &:hover {
-        background-color: #f0f0f0;
-      }
+      /* &:hover {
+        background-color: blue;
+      } */
     }
-    &:focus {
+    /* &:focus {
       outline: none;
       box-shadow: 0 0 2px 1px #4d90fe;
-    }
-  }
+    } */
+}
    
   
   
