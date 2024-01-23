@@ -1,0 +1,360 @@
+body {
+    margin: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    }
+
+    .header {
+        text-align: center;
+        margin: 20px;
+        max-width: 300px;
+        margin-top: -20px;
+    }
+/* 
+    header image {
+        height: 400px;
+        width: 400px;
+    } */
+
+    #headerheading {
+        font-size: 30px;
+        font-style: normal;
+        font-weight: bold;
+        font-family: arima madurai;
+        margin-bottom: -20px;
+        padding: 0;
+    }
+
+    #headercontent {
+        font-size: 8px;
+        font-weight: 100;
+        font-style: normal;
+        font-family: arima madurai;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    /* @media screen and (max-width: 768px) {
+        #headerheading {
+            font-size: 30px;
+            margin-bottom: -20px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        #headercontent {
+            font-size: 15px;
+        }
+    } */
+    
+
+
+
+   
+
+.hiringheader {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+
+#hiringheadline {
+        font-family: 'Merriweather';
+        font-weight: bold;
+        font-size: 60px;
+        text-align: center;
+        padding: 10px;
+        padding-bottom: 20px;
+        color: black;
+        }
+    
+#hiringheadline {
+    font-size: 60px;
+    margin-bottom: 30px;
+    padding: 5px;
+    margin-top: 40px;
+    line-height: normal;
+}
+
+
+
+#hiringheadlinecontent {
+    text-align: center;
+    color: #1c4587;
+    font-size: 40px;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    line-height: normal;
+}
+
+@media only screen and (max-width: 768px) {
+    #hiringheadline {
+        font-size: 40px;
+        line-height: normal;
+    }
+    #hiringheadlinecontent {
+        font-size: 30px;
+        line-height: normal;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #hiringheadline {
+        font-size: 30Px;
+        line-height: normal;
+    }
+    #hiringheadlinecontent {
+        font-size: 20px;
+        line-height: normal;
+    }
+}    
+
+
+.fitercontainer {
+    display: flex;
+    justify-content: center;
+
+}
+
+#location-filter {
+    /* margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5px; */
+    max-width: 350px;
+    /* appearance: none; */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    option {
+      color: black;
+      background-color: white;
+      /* &:hover {
+        background-color: blue;
+      } */
+    }
+    /* &:focus {
+      outline: none;
+      box-shadow: 0 0 2px 1px #4d90fe;
+    } */
+}
+
+
+   
+  
+  
+.container3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* changed from 'center' to 'space-around' */
+    box-sizing: border-box;
+    column-gap: 20px;
+    background-color: #fff;
+    }
+
+    .job-box {
+    border: 5px solid #ccc;
+    width: 350px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    /* box-shadow: 3px 3px 3px 3px; */
+    }
+
+    .job-box {
+        border: 1px solid #ccc;
+        width: 350px;
+        padding: 20px;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        transition: transform 0.3s ease; /* Add a transition for a smooth animation */
+        z-index: 1; /* Set the initial z-index */
+    }
+    
+    .job-box:hover {
+        transform: scale(1.05); /* Zoom in slightly on hover */
+        z-index: 2; /* Set a higher z-index on hover to bring it forward */
+    }
+
+    .job-box {margin: 15px;}
+
+    .job-title {
+        color: black;
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-decoration: none;
+    }
+
+    .job-info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+
+    .job-info-label {
+        display: block;
+        margin-bottom: 5px;
+        color: #666666;
+    }
+
+
+    .button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 10px;
+        /* width: 200%; */
+        text-align: center;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .button:hover {
+        background-color: #0056b3;
+      }
+
+      .job-box .button {
+        display: block;
+        margin: 0 auto;
+        width: 300px; /* Increase the width of the button */
+      }  
+
+
+.container2 {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* changed from 'center' to 'space-around' */
+    box-sizing: border-box;
+    column-gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #c9daf8;
+    color: white;
+    margin-top: 20px;
+}
+
+.footerheading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin: 10px;
+    color: black;
+    line-height: normal;
+   }
+   
+   
+.footercontent {
+    font-family: 'inter', sans-serif;
+    font-size: 18px;
+    line-height: 1.25;
+    font-weight: 400;
+    text-align: left;
+    margin: 10px;
+    color: black;
+   }
+
+@media only screen and (max-width: 768px) {
+    .footerheading {
+        font-size: 17px;
+        margin-bottom: 7px;
+    }
+    .footercontent {
+        font-size: 16px;
+        margin-top: 7px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .footerheading {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .footercontent {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .icon-link, .icon-link2 {
+        font-size: 1rem;
+    }
+}    
+
+
+
+footer { 
+    position: static; 
+    bottom: 0;
+    box-sizing: border-box; 
+    margin: 20px; 
+    column-gap: 20px; 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+} 
+
+
+.box1, .box2, .box3 {
+    box-sizing: border-box; /* added 'border-box' to include padding and border in the box's total width and height */
+   }
+   
+   
+.icon-container {
+    display: flex;
+    text-align: left;
+    margin-left: 6px;
+   }
+   
+   
+.icon-link, .icon-link2 {
+    margin: 5px;
+    color: black;
+    text-decoration: none;
+    font-size: 2.5rem;
+   }
+   
+.icon-link:hover {
+    color: #007bff;
+   }
+
+.icon-link2:hover{
+    color: green;
+}   
+   
+.box3 {
+       width: 400px;
+   }
+   
+   
+.box1 {
+       width: 400px;
+   }
+   
+   
+.box2 {
+       width: 400px;
+   }
+
+footer{
+    margin-top: auto;
+}
+
+.box1 .box2 .box3 {
+    width: 100%;
+    justify-content: space-around; (for the icon-container)
+}
+
+.content-wrapper { flex: 1; padding: 0 30px; } 
