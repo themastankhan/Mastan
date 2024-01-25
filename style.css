@@ -6,10 +6,7 @@ body {
   background-color: white;
 }
 
-.hiringheader {
-    margin: 20px;
-      
-    }
+.hiringheader {margin: 20px;}
     
 #hiringheadline {
       font-family: "Montserrat", serif;
@@ -79,7 +76,7 @@ body {
     }
     }
 
-    @media (max-width: 780px) {
+    @media (max-width: 480px) {
     .containerjobinfo {
     max-width: 350px; /* Decreased max-width to 400px */
     }
