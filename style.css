@@ -448,6 +448,7 @@ font-family: lato;
   }
   .jdshortitle {
     font-size: 12px;
+    margin-bottom: 2px;
   }
   .jdcontentline {
     margin-bottom: -2px;
