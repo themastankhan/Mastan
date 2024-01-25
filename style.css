@@ -8,7 +8,7 @@
    }
 
     
-#hiringheadline {
+.hiringheader {
     /* margin: 40px; */
     font-family: "Montserrat", serif;
     font-style: normal;
@@ -23,34 +23,26 @@
     margin-right: 15%;
 }
     
-#hiringheadline {
-    /* margin-left: 30px;
-    margin-right: 30px;
-    padding-top: 50px;
-    padding-bottom: 50px; */
-    /* padding-left: 13%;
-    padding-right: 13%; */
-    line-height: normal;
+h1 {
+    font-size: 60px;
+}
+
+.hiringheader {
+    line-height: 1.15;
     }
     
-
-    
 @media only screen and (max-width: 768px) {
-    #hiringheadline {
-      font-size: 35px;
-      line-height: normal;
+    .hiringheader {
+      font-size: 30px;
+      line-height: 1.15;
       background-color: #;
       margin-bottom: 0px;
     }
 }
     
 @media only screen and (max-width: 480px) {
-    #hiringheadline {
+    .hiringheader {
       font-size: 30Px;
-      line-height: normal;
-    }
-    #hiringheadlinecontent {
-      font-size: 20px;
       line-height: normal;
     }
 }    
@@ -69,24 +61,18 @@
     max-width: 800px;
     transition: transform 0.1s, border-color 0.1s; / added transition property 
    }
-  
-@media only screen and (max-width: 780px)
+
+   @media only screen and (max-width: 768px) {
     .containerjobinfo {
-     max-width: 400px; /* Decreased max-width to 400px */
+        width: 300px;
     }
 }
-
-@media only screen and (max-width: 480px)
-    .containerjobinfo {
-    max-width: 400px; /* Decreased max-width to 400px */
-    }
-}  
   
-    .inner-box1 {
+.inner-box1 {
     margin-top: 8px;
     margin-bottom: 10px;
     background-color: white;
-    }
+}
 
 .inne-box1, inner-box2, inner-box3 {
     background-color: white;
@@ -114,8 +100,8 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; changed from 'center' to 'space-around' */
-    justify-content: center;
+    flex-flow: wrap;
+    justify-content: center; changed from 'center' to 'space-around'
     column-gap: 50px;
     box-sizing: border-box;
     background-color: #c9daf8;
@@ -157,7 +143,7 @@ footer {
     color: black;
    }
   
-  @media only screen and (max-width: 768px) {
+   @media only screen and (max-width: 768px) {
     .footerheading {
         font-size: 17px;
         margin-bottom: 7px;
@@ -166,9 +152,9 @@ footer {
         font-size: 16px;
         margin-top: 7px;
     }
-  }
-  
-  @media only screen and (max-width: 480px) {
+}
+
+@media only screen and (max-width: 480px) {
     .footerheading {
         font-size: 18px;
         margin-bottom: 10px;
@@ -180,17 +166,13 @@ footer {
     .icon-link, .icon-link2 {
         font-size: 1rem;
     }
+}    
+
+
+    .icon-link, .icon-link2 {
+        font-size: 1rem;
+    }
   }    
-  
-  /* footer { 
-    position: static; 
-    bottom: 0;
-    box-sizing: border-box; 
-    column-gap: 20px; 
-    padding-top: 20px; 
-    padding-bottom: 20px; 
-   }  */
-  
   
   .box1, .box2, .box3 {
     box-sizing: border-box; /* added 'border-box' to include padding and border in the box's total width and height */
