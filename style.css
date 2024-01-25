@@ -82,18 +82,57 @@ h1 {
         flex-wrap: wrap;
         column-gap: 0;
         justify-content: space-between;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         padding-left: 20px;
         padding-right: 20px;
+        margin: 5px;
+        margin-top: 20px;
       }
     .inner-box1 {
           /* margin-top: 8px; */
           margin-bottom: 20px;
           background-color: white;
       }
-    }
+  }
   
+
+@media only screen and (max-width: 480px) {
+      .detail-itemheading {
+        font-size: 12px;
+      }
+      .detail-itemcontent {
+        font-size: 14px;
+      }
+      #header {
+        font-size: 16px;
+      }
+}
+
+@media only screen and (max-width: 640px) {
+  .containerjobinfo .detail-itemheading {
+    font-size: 12px;
+  }
+  .containerjobinfo .detail-itemcontent {
+    font-size: 14px;
+  }
+  .containerjobinfo #header {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .containerjobinfo .detail-itemheading {
+    font-size: 12px;
+  }
+  .containerjobinfo .detail-itemcontent {
+    font-size: 14px;
+  }
+  .containerjobinfo #header {
+    font-size: 16px;
+  }
+}
+
 
 
 .inne-box1, inner-box2, inner-box3 {
