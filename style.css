@@ -75,6 +75,12 @@
   max-width: 400px; /* Decreased max-width to 400px */
     }
     }
+
+    @media (max-width: 480px) {
+        .containerjobinfo {
+        max-width: 400px; /* Decreased max-width to 400px */
+        }
+    }  
   
     .inner-box1 {
     margin-top: 8px;
