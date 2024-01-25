@@ -320,6 +320,7 @@ footer{
   max-width: 700px;
   margin: 0 auto;
   padding: 2rem;
+  padding-top: 10px;
   border: 2px solid #000;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -328,11 +329,7 @@ footer{
   background-color: white;
 }
 
-@media only screen and (max-width: 768px) {
-.jdcontainer {
-  max-width: 350px;
-}
-}
+
 
 .jdcontentline {
   background-color: white;
@@ -348,11 +345,7 @@ h1 {
   margin-bottom: -10px;
 } */
 
-ul, li {
-color: black;
-font-size: 18px;
-background-color: white;
-}
+
 
 .jdapplybutton {
   display: inline-block;
@@ -361,7 +354,7 @@ background-color: white;
   color: #fff;
   text-decoration: none;
   border-radius: 4px;
-  margin-top: 5px;
+  margin-top: 10px;
   font-size: 16px;
 }
 
@@ -384,21 +377,85 @@ background-color: white;
 font-size: 40px;
 line-height: 1.15;
 background-color: white;
+margin-top: 10px;
+margin-bottom: 20px;
 }  
 
 .jdshortitle {
-color: black;
-font-weight: 550;
-font-size: 18px;
-background-color: white;
+  color: black;
+  font-weight: 550;
+  font-size: 16px;
+  background-color: white;
+  font-family: lato;
 }  
 
-.jdshortitlecontent {
+.jdshortitlecontent  {
 color: black;
-font-size: 18px;
+font-size: 16px;
 background-color: white;
+font-family: lato;
 }
 
+.jdlineunderlinetitle {
+  color: black;
+  font-weight: 550;
+  font-size: 16px;
+  background-color: white;
+  font-family: lato;
+}
+
+.jdlineunderlinecontent {
+  color: black;
+  font-size: 16px;
+  background-color: white;
+  font-family: lato;
+}
+
+.jdlineunderline {
+  background-color: white;
+  line-height: 1;
+}
+
+ul, li {
+  color: black;
+  font-size: 16px;
+  background-color: white;
+  line-height: 1.15;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-family: lato;
+  }
+
 .jdcontentline {
-margin-bottom: -8px;
+margin-bottom: 5px;
+font-family: lato;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .jdcontainer {
+    max-width: 350px;
+  }
+  .jdtitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  ul, li {
+    font-size: 12px;
+  }
+  .jdshortitlecontent {
+    font-size: 12px;
+  }
+  .jdshortitle {
+    font-size: 12px;
+  }
+  .jdcontentline {
+    margin-bottom: -2px;
+  }
+  .jdlineunderlinecontent {
+    font-size: 12px;
+  }
+  .jdlineunderlinetitle {
+    font-size: 12px;
+  }
 }
