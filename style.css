@@ -70,16 +70,16 @@
     transition: transform 0.1s, border-color 0.1s; / added transition property 
    }
   
-  @media (max-width: 767px) {
-  .containerjobinfo {
-  max-width: 400px; /* Decreased max-width to 400px */
+    @media (max-width: 780px) {
+    .containerjobinfo {
+     max-width: 400px; /* Decreased max-width to 400px */
     }
     }
 
     @media (max-width: 480px) {
-        .containerjobinfo {
-        max-width: 400px; /* Decreased max-width to 400px */
-        }
+    .containerjobinfo {
+    max-width: 300px; /* Decreased max-width to 400px */
+    }
     }  
   
     .inner-box1 {
