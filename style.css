@@ -20,8 +20,7 @@ body {
       padding: 10px;
       padding-bottom: 20px;
       color: black;
-      background-color: #c9daf8;
-      }
+      background-color: #c9daf8;}
     
 #hiringheadline {
     margin-bottom: 30px;
@@ -30,8 +29,7 @@ body {
     padding-bottom: 20px; */
     padding: 20px;
     margin-top: 20px;
-    line-height: normal;
-    }
+    line-height: normal;}
     
 
     
@@ -77,7 +75,13 @@ body {
     
     @media (max-width: 767px) {
     .containerjobinfo {
-    max-width: 320px; /* Decreased max-width to 400px */
+    max-width: 350px; /* Decreased max-width to 400px */
+    }
+    }
+
+    @media (max-width: 780px) {
+    .containerjobinfo {
+    max-width: 350px; /* Decreased max-width to 400px */
     }
     }
     
@@ -153,31 +157,6 @@ body {
           font-size: 1rem;
       }
     }    
-    
-  .container2 {
-      position: static;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center; /* changed from 'center' to 'space-around' */
-      box-sizing: border-box;
-      column-gap: 20px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      background-color: #c9daf8;
-      color: white;
-      margin-top: 20px;
-  } 
-    
-    footer { 
-      position: static; 
-      bottom: 0;
-      box-sizing: border-box; 
-      margin: 20px; 
-      column-gap: 20px; 
-      padding-top: 20px; 
-      padding-bottom: 20px; 
-    } 
-    
     
     .box1, .box2, .box3 {
       box-sizing: border-box; /* added 'border-box' to include padding and border in the box's total width and height */
