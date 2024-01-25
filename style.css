@@ -70,7 +70,7 @@ h1 {
    @media only screen and (max-width: 768px) {
     .containerjobinfo {
         width: 350px;
-        padding: 0px;
+        padding: 10px;
         display: flex;
         flex-wrap: wrap;
         column-gap: 0;
