@@ -70,6 +70,7 @@ h1 {
    @media only screen and (max-width: 768px) {
     .containerjobinfo {
         width: 350px;
+        padding: 0px;
         display: flex;
         flex-wrap: wrap;
         column-gap: 0;
@@ -228,13 +229,6 @@ footer {
   .box2 {
        width: 400px;
    }
-
-   @media only screen and (max-width: 768px) {
-    ..box1, .box2, .box3 {
-        width: 350px;
-      }
-    }
-
 
 
 
