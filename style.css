@@ -82,7 +82,10 @@ h1 {
         flex-wrap: wrap;
         column-gap: 0;
         justify-content: space-between;
-      
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
       }
     .inner-box1 {
           /* margin-top: 8px; */
@@ -102,12 +105,12 @@ h1 {
 }
 
 
-    .containerjobinfo:hover { 
+.containerjobinfo:hover { 
   transform: scale(1.05);
   border-color: #00A0DF;
-    }
+  }
   
-  .containerjobinfo:hover .inner-box1 .detail-item { color: #007bff; }
+.containerjobinfo:hover .inner-box1 .detail-item { color: #007bff; }
 
 
 
@@ -173,12 +176,6 @@ footer {
     .container2 {
       margin-left: 10px;
       margin-right: 10px;
-    }
-    .detail-itemheading {
-      font-size: 14px;
-    }
-    .detail-itemcontent {
-      font-size: 16px;
     }
     .footercontent {
         font-size: 16px;
