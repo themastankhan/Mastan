@@ -123,7 +123,7 @@ body {
 }
      
      
-    .footercontent {
+  .footercontent {
       font-family: 'inter', sans-serif;
       font-size: 18px;
       line-height: 1.25;
@@ -209,43 +209,3 @@ body {
     }
     
     .content-wrapper { flex: 1; padding: 0 30px; } 
-
-
-
-
-
-body {
-      font-family: Arial, sans-serif;
-  }
-  
-.job-description-box {
-      background-color: #f9f9f9;
-      padding: 20px;
-      margin: 20px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-.job-description-box h2,
-.job-description-box h3 {
-      color: #333;
-  }
-  
-.job-description-box p,
-.job-description-box ul {
-      color: #666;
-  }
-  
-.job-description-box a {
-      display: inline-block;
-      background-color: #4CAF50;
-      color: white;
-      text-decoration: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      margin-top: 20px;
-}
-  
-.job-description-box a:hover {
-      background-color: #45a049;
-  }
