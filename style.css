@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    background-color: #c9daf8;
+    background-color: #e6e6fa;
     padding: 0;
     height: auto;
     width: auto;
@@ -16,11 +16,11 @@
     font-size: 60px;
     text-align: center;
     color: black;
-    background-color: #c9daf8;
+    background-color: #e6e6fa;
     margin-bottom: 40px;
     margin-top: 40px;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 13%;
+    margin-right: 13%;
 }
     
 h1 {
@@ -48,14 +48,19 @@ h1 {
 }    
 
 .containerjobinfo {
+    font-family: "Lato";
     border: 2px solid #000;
+    box-shadow: 3px 3px #007bff;
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* changed from 'center' to 'space-around' */
+    justify-content: center; /* changed from 'center' to 'space-around' */
     box-sizing: border-box;
+    column-gap: 70px;
     background-color: white;
     padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin: 0 auto;
     margin-top: 20px;
     max-width: 800px;
@@ -64,15 +69,21 @@ h1 {
 
    @media only screen and (max-width: 768px) {
     .containerjobinfo {
-        width: 300px;
+        width: 380px;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 0;
+        justify-content: space-between;
+      
+      }
+    .inner-box1 {
+          /* margin-top: 8px; */
+          margin-bottom: 20px;
+          background-color: white;
+      }
     }
-}
   
-.inner-box1 {
-    margin-top: 8px;
-    margin-bottom: 10px;
-    background-color: white;
-}
+
 
 .inne-box1, inner-box2, inner-box3 {
     background-color: white;
@@ -95,6 +106,8 @@ h1 {
 .container2 {
     margin: 0;
     margin-top: 50px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
     /* border: 1px solid #000; */
     /* column-gap: 20px; */
     position: relative;
@@ -102,23 +115,24 @@ h1 {
     flex-wrap: wrap;
     flex-flow: wrap;
     justify-content: center; changed from 'center' to 'space-around'
-    column-gap: 50px;
     box-sizing: border-box;
-    background-color: #c9daf8;
+    background-color: #e6e6fa;
     color: white;
     /* align-items: center;
     align-content: center; */
 } 
 
 footer {
+  border-top: 1px solid #000;
   position: static;
   bottom: 0;
   box-sizing: border-box;
   padding-top: 20px;
   padding-bottom: 20px;
+
   left: 0;
   right: 0;
-  margin: 0; /* add this line */
+  column-gap: 40px;
 }
   
   .footerheading {
@@ -215,6 +229,16 @@ footer {
        width: 400px;
    }
   
+
+
+
+
+
+
+
+
+
+
   footer{
     margin-top: auto;
   }
