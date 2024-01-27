@@ -109,6 +109,9 @@ input[type="checkbox"]{
     background: #e6e6fa;
     color: #007bff;
   }
+    nav .logo {
+    font-size: 20px;
+  }
 }
 .content{
   position: absolute;
