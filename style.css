@@ -50,7 +50,7 @@ h1 {
   
 @media only screen and (max-width: 480px) {
   .hiringheader {
-    font-size: 30Px;
+    font-size: 25Px;
     line-height: normal;
   }
 }    
@@ -76,12 +76,12 @@ h1 {
  }
 
 .detail-itemheading {
-  font-size: 16px;
+  font-size: 14px;
   color: #464646;
   background-color: white;
   margin-bottom: -20px;
-  font-style: italic;
-  font-weight: 500; 
+  font-style: normal;
+  font-weight: bold;
 
 }
 
@@ -107,7 +107,7 @@ h1 {
 
 @media only screen and (max-width: 768px) {
   .detail-itemheading {
-    font-size: 14px;
+    font-size: 12px;
   }
   .detail-itemcontent {
     font-size: 14px;
@@ -245,7 +245,6 @@ column-gap: 40px;
   }
 }    
 
-
   .icon-link, .icon-link2 {
       font-size: 1rem;
   }
@@ -291,16 +290,6 @@ column-gap: 40px;
 .box2 {
      width: 400px;
  }
-
-
-
-
-
-
-
-
-
-
 
 footer{
   margin-top: auto;
