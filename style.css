@@ -7,6 +7,128 @@
   border: none;
  }
 
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #e6e6fa;
+    padding-left: 50px;
+    padding-right: 50px;  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+  }
+
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    background-color: #e6e6fa;
+    column-gap: 30px;
+    font-size: 20px;
+    padding: 15px; 
+    transition: transform 0.2s ease-in-out; /* added transition property */
+  }
+
+  .nav-item {
+    margin-right: 1rem;
+    background-color: #e6e6fa;
+    margin: 0;
+    transition: transform 0.1s, border-color 0.1s; / added transition property 
+
+  }
+
+  .nav-link {
+    color: #464646;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+    font-size: 15px;
+    /* border: 3px solid #666666; */
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    /* box-shadow: inset; */
+    padding: 10px 15px 10px 15px;
+    transition: transform 0.1s, border-color 0.1s; / added transition property 
+  }
+
+  .nav-link:hover {
+    color: #007bff;
+    transform: scale(1.1); /* added transform property */
+  }
+  .nav-item{
+    color: #007bff;
+    transform: scale(1.1); /* added transform property */
+  }
+
+  .navbar-brand {
+    font-family: 'Arima Madurai';
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 35px;
+    justify-content: center;
+    padding: 15px;
+    padding-top: 20px;
+    font-weight: bold;
+  }
+
+  .navbar-brand-text {
+    color: #464646;
+    font-weight: bold;
+    margin-left: 0.5rem;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      background-color: #e6e6fa;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    .nav-link{
+      font-size: 12px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 5px;
+      padding-top: 5px;
+    }
+
+    .navbar-nav {
+      /* flex-direction: column; */
+      background-color: #e6e6fa;
+      column-gap: 10px;
+      padding: 0;
+    }
+
+    .nav-item {
+      margin: 0.5rem 0;
+      padding: 5px;
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      font-size: 30px;
+      font-weight: bold;
+      justify-content: center;
+      padding: 0px;
+      font-family: 'Arima Madurai';
+    }
+
+    .navbar-brand-text {
+      display: none;
+      margin-left: 5px;
+    }
+  }
   
 .hiringheader {
   /* margin: 40px; */
@@ -37,6 +159,7 @@ h1 {
 
 .hiringheader {
   line-height: 1.15;
+  padding-top: -10px;
   }
   
 @media only screen and (max-width: 768px) {
@@ -47,7 +170,7 @@ h1 {
     margin-bottom: 0px;
   }
 }
-  
+
 @media only screen and (max-width: 480px) {
   .hiringheader {
     font-size: 25Px;
