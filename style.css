@@ -220,7 +220,7 @@ h1 {
     line-height: 1.15;
     background-color: #;
     margin-bottom: 0px;
-    margin-top: 0px;
+    margin-top: 20px;
   }
 }
 
@@ -228,6 +228,7 @@ h1 {
   .hiringheader {
     font-size: 25Px;
     line-height: normal;
+    margin-top: 20px;
   }
 }    
 
