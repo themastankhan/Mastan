@@ -8,7 +8,17 @@
  }
 
 
+
+
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -22,13 +32,13 @@ nav{
   background: #e6e6fa;
   align-items: center;
   justify-content: space-between;
-  padding: 0 50px 0 100px;
+  padding: 0 180px 0 180px;
   flex-wrap: wrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 nav .logo{
   color: black;
-  font-size: 35px;
-  font-weight: 600;
+  font-size: 30px;
   font-family: 'arima madurai';
 }
 
@@ -42,23 +52,30 @@ nav ul{
   background-color: #e6e6fa;
 }
 nav ul li{
-  margin: 0 5px;
+margin-top: 20px;
+margin-bottom: 10px;
+margin-left: 20px;
+margin-right: 20px;
 }
 nav ul li a{
   color: black;
   text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
   font-size: 18px;
   font-weight: 500;
-  padding: 0px 15px;
+  /* padding: 40px 15px 15px; */
   border-radius: 5px;
   letter-spacing: 1px;
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
 }
-nav ul li a.active,
-nav ul li a:hover{
-  color: #111;
+/* nav ul li a,
+nav ul li a{
+  color: black;
   background: #e6e6fa;
-}
+} */
 nav .menu-btn i{
   color: black;
   font-size: 22px;
@@ -68,6 +85,24 @@ nav .menu-btn i{
 input[type="checkbox"]{
   display: none;
 }
+
+/* nav ul li a.active:{
+    background: #e6e6fa;
+    color: #007bff;
+    font-weight: bold;
+  } */
+
+  nav ul li a {
+    color: black;
+    background: #e6e6fa;
+    }
+
+    nav ul li a.active{
+        background: #e6e6fa;
+        color: #007bff;
+        font-weight: bold;
+    }
+
 @media (max-width: 1000px){
   nav{
     padding: 0 40px 0 50px;
@@ -82,7 +117,7 @@ input[type="checkbox"]{
   }
   nav ul{
     position: fixed;
-    top: 80px;
+    top: 50px;
     left: -100%;
     background: #e6e6fa;
     height: 100vh;
@@ -108,16 +143,27 @@ input[type="checkbox"]{
   #click:checked ~ ul li a{
     margin-left: 0px;
   }
-  nav ul li a.active,
-  nav ul li a:hover{
+
+    nav ul li a {
+    color: black;
     background: #e6e6fa;
-    color: #007bff;
-  }
+    }
+
+    nav ul li a.active{
+        background: #e6e6fa;
+        color: #007bff;
+        font-weight: bold;
+    }
+
     nav .logo {
     font-size: 20px;
   }
   nav{
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;
   }
 }
 .content{
