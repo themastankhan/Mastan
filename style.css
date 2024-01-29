@@ -31,6 +31,10 @@ nav .logo{
   font-weight: 600;
   font-family: 'arima madurai';
 }
+
+.logo{
+  text-decoration: none;}
+
 nav ul{
   display: flex;
   flex-wrap: wrap;
