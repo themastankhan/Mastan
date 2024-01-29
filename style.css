@@ -216,19 +216,19 @@ h1 {
   
 @media only screen and (max-width: 768px) {
   .hiringheader {
-    font-size: 30px;
+    font-size: 35px;
     line-height: 1.15;
     background-color: #;
     margin-bottom: 0px;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .hiringheader {
-    font-size: 25Px;
+    font-size: 30Px;
     line-height: normal;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }    
 
