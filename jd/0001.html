@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -11,196 +10,524 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" type="text/css" href="../style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link href='https://fonts.googleapis.com/css?family=Arima Madurai' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-  <title>Customer Support Executive | Job Nexus India</title>
-</head>
-<body>
+ <title>Receptionist/Office Administrator - 5-6 Years - Bandra, Mumbai, Maharashtra | Job Nexus India</title>
 
-<nav>
-    <a class="logo" href="https://www.jobnexusindia.com/"><div class="logo">Job Nexus India</div></a>
-    <input type="checkbox" id="click">
-    <label for="click" class="menu-btn">
-      <i class="fas fa-bars"></i>
-    </label>
-    <ul>
-      <li><a href="https://www.jobnexusindia.com/">Current Openings</a></li>
-      <li><a href="../about-us.html">About Us</a></li>
-    </ul>
+ <style>
+  * {
+  margin: 0;
+  background-color: white;
+  padding: 0;
+  height: auto;
+  width: auto;
+  border: none;
+ }
+
+ /* Navigation Bar */
+ .navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: white;
+    padding-left: 50px;
+    padding-right: 50px;  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+  }
+
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    background-color: white;
+    column-gap: 30px;
+    font-size: 20px;
+    padding: 15px; 
+    transition: transform 0.2s ease-in-out; /* added transition property */
+  }
+
+  .nav-item {
+    margin-right: 1rem;
+    background-color: white;
+    margin: 0;
+    transition: transform 0.1s, border-color 0.1s; / added transition property 
+
+  }
+
+  .nav-link {
+    color: #464646;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+    font-size: 15px;
+    /* border: 3px solid #666666; */
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    /* box-shadow: inset; */
+    padding: 10px 15px 10px 15px;
+    transition: transform 0.1s, border-color 0.1s; / added transition property 
+  }
+
+  .nav-link:hover {
+    color: #007bff;
+    transform: scale(1.1); /* added transform property */
+  }
+  .nav-item{
+    color: #007bff;
+    transform: scale(1.1); /* added transform property */
+  }
+
+  .navbar-brand {
+    font-family: 'Arima Madurai';
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 35px;
+    justify-content: center;
+    padding: 15px;
+    padding-top: 20px;
+    font-weight: bold;
+  }
+
+  .navbar-brand-text {
+    color: #464646;
+    font-weight: bold;
+    margin-left: 0.5rem;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      background-color: white;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    .nav-link{
+      font-size: 12px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 5px;
+      padding-top: 5px;
+    }
+
+    .navbar-nav {
+      /* flex-direction: column; */
+      background-color: white;
+      column-gap: 10px;
+      padding: 0;
+    }
+
+    .nav-item {
+      margin: 0.5rem 0;
+      padding: 5px;
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      font-size: 30px;
+      font-weight: bold;
+      justify-content: center;
+      padding: 0px;
+      font-family: 'Arima Madurai';
+    }
+
+    .navbar-brand-text {
+      display: none;
+      margin-left: 5px;
+    }
+  }
+
+ .jdcontainer {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-top: 10px;
+  border: 2px solid #000;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  /* margin-left: 10px;
+  margin-right: 10px; */
+  background-color: white;
+}
+
+
+
+.jdcontentline {
+  background-color: white;
+}
+
+h1 {
+  color: black;
+  font-family: "Lato";
+  font-weight: bold;
+}
+
+/* h3 {
+  margin-bottom: -10px;
+} */
+
+
+
+.jdapplybutton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.jdapplybutton:hover {
+  background-color: #0056b3;
+}
+
+.jdshortdetailscontainer {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* changed from 'center' to 'space-around' */
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.jdtitle {
+font-size: 40px;
+line-height: 1.15;
+background-color: white;
+margin-top: 10px;
+margin-bottom: 20px;
+}  
+
+.jdshortitle {
+  color: black;
+  font-weight: 550;
+  font-size: 16px;
+  background-color: white;
+  font-family: lato;
+}  
+
+.jdshortitlecontent  {
+color: black;
+font-size: 16px;
+background-color: white;
+font-family: lato;
+}
+
+.jdlineunderlinetitle {
+  color: black;
+  font-weight: 550;
+  font-size: 16px;
+  background-color: white;
+  font-family: lato;
+}
+
+.jdlineunderlinecontent {
+  color: black;
+  font-size: 16px;
+  background-color: white;
+  font-family: lato;
+}
+
+.jdlineunderline {
+  background-color: white;
+  line-height: 1;
+}
+
+ul, li {
+  color: black;
+  font-size: 16px;
+  background-color: white;
+  line-height: 1.15;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-family: lato;
+  }
+
+.jdcontentline {
+margin-bottom: 5px;
+font-family: lato;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .jdcontainer {
+    max-width: 350px;
+  }
+  .jdtitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  ul, li {
+    font-size: 12px;
+  }
+  .jdshortitlecontent {
+    font-size: 12px;
+  }
+  .jdshortitle {
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+  .jdcontentline {
+    margin-bottom: -2px;
+  }
+  .jdlineunderlinecontent {
+    font-size: 12px;
+  }
+  .jdlineunderlinetitle {
+    font-size: 12px;
+  }
+    .jdapplybutton {
+    font-size: 14px;
+  }
+}
+
+.container2 {
+  margin: 0;
+  margin-top: 50px;
+  /* margin-left: 20px;
+  margin-right: 20px; */
+  /* border: 1px solid #000; */
+  /* column-gap: 20px; */
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+  justify-content: center; changed from 'center' to 'space-around'
+  box-sizing: border-box;
+  background-color: white;
+  color: white;
+  /* align-items: center;
+  align-content: center; */
+} 
+
+footer {
+border-top: 1px solid #000;
+position: static;
+bottom: 0;
+box-sizing: border-box;
+padding-top: 20px;
+padding-bottom: 20px;
+
+left: 0;
+right: 0;
+column-gap: 40px;
+}
+
+.footerheading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  justify-content: center;
+  margin: 10px;
+  color: black;
+  line-height: normal;
+  }
+ 
+ 
+.footercontent {
+  font-family: 'inter', sans-serif;
+  font-size: 18px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-align: left;
+  margin: 10px;
+  color: black;
+ }
+
+ @media only screen and (max-width: 768px) {
+  .footerheading {
+      font-size: 17px;
+      margin-bottom: 7px;
+  }
+  .container2 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .footercontent {
+      font-size: 16px;
+      margin-top: 7px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .footerheading {
+      font-size: 18px;
+      margin-bottom: 10px;
+  }
+  .footercontent {
+      font-size: 15px;
+      margin-top: 10px;
+  }
+  .icon-link, .icon-link2 {
+      font-size: 1rem;
+  }
+}    
+
+  .icon-link, .icon-link2 {
+      font-size: 1rem;
+  }
+}    
+
+.box1, .box2, .box3 {
+  box-sizing: border-box; /* added 'border-box' to include padding and border in the box's total width and height */
+ }
+ 
+ 
+.icon-container {
+  display: flex;
+  text-align: left;
+  margin-left: 6px;
+ }
+ 
+ 
+.icon-link, .icon-link2 {
+  margin: 5px;
+  color: black;
+  text-decoration: none;
+  font-size: 2.5rem;
+ }
+ 
+.icon-link:hover {
+  color: #007bff;
+ }
+
+.icon-link2:hover{
+  color: green;
+}   
+ 
+.box3 {
+     width: 400px;
+ }
+ 
+ 
+.box1 {
+     width: 400px;
+ }
+ 
+ 
+.box2 {
+     width: 400px;
+ }
+
+footer{
+  margin-top: auto;
+}
+
+.box1 .box2 .box3 {
+  width: 100%;
+  justify-content: space-around; (for the icon-container)
+}
+
+.content-wrapper { flex: 1; padding: 0 30px; } 
+
+ </style>
+</head>
+
+
+
+<nav class="navbar">
+  <a href="#" class="navbar-brand">
+    Job Nexus India
+  </a>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a href="./" class="nav-link">Home</a>
+    </li>
+    <li class="nav-item">
+      <a href="https://www.linkedin.com/company/jobnexusindia" class="nav-link">About Us</a>
+    </li>
+    <!-- <li class="nav-item">
+      <a href="#" class="nav-link">Blogs</a>
+    </li> -->
+  </ul>
 </nav>
 
 <body>
  <div class="jdcontainer">
     <h1 class="jdtitle">Customer Support Executive</h1>
 
-    <P class="jdcontentline">
-      <span class="jdshortitle">Industry: </span>
-      <span class="jdshortitlecontent">BPO</span>
-    </P>
-    <P class="jdcontentline">
-      <span class="jdshortitle">Location: </span>
-      <span class="jdshortitlecontent">Bangalore</span>
-    </P>
-    <P class="jdcontentline">
-      <span class="jdshortitle">Salary: </span>
-      <span class="jdshortitlecontent">Best in the Industry</span>
-    </P>
-    <P class="jdcontentline">
-      <span class="jdshortitle">Gender: </span>
-      <span class="jdshortitlecontent">Male/Female</span>
-    </P>
-    <P class="jdcontentline">
-      <span class="jdshortitle">Salary: </span>
-      <span class="jdshortitlecontent">Best in the Industry</span>
-    </P>
-    <P class="jdcontentline">
-      <span class="jdshortitle">Education: </span>
-      <span class="jdshortitlecontent">Any Graduate</span>
-    </P>
-    <P class="jdcontentline">
-      <span class="jdshortitle">Experience: </span>
-      <span class="jdshortitlecontent">1-3 Years</span>
-    </P>
-    <P class="jdcontentline">
-      <span class="jdshortitle">Notice Period: </span>
-      <span class="jdshortitlecontent">30 Days</span>
-    </P><br>
-    <P class="jdcontentline">
-      <span class="jdshortitle" id="bptitle">Roles and Responsibilities </span>
-      <span class="jdshortitlecontent">    
-        <ul style="margin-top: 5px; margin-left: 8px;  background-color: white;">
-        <li style="margin-left: 8px;  background-color: white;">Bachelor's degree in Computer Science or related field</li>
-        <li style="margin-left: 8px;  background-color: white;">3+ years of experience in software development</li>
-        <li style="margin-left: 8px;  background-color: white;">Proficiency in Java and Python</li>
-      </ul>
-      </span>
-    </P><br>
-    <P class="jdcontentline">
-      <span class="jdshortitle" id="bptitle">Mandatory Requirements </span>
-      <span class="jdshortitlecontent">    
-        <ul style="margin-top: 5px; margin-left: 8px; background-color: white;">
-        <li style="margin-left: 8px; background-color: white;">Collaborate with cross-functional teams to define, design, and ship new features</li>
-        <li style="margin-left: 8px; background-color: white;">Work on bug fixing and improving application performance</li>
-        <li style="margin-left: 8px; background-color: white;">Continuously discover, evaluate, and implement new technologies to maximize development efficiency</li>
-        </ul></span>
-    </P><br>
-
-    <P class="jdlineunderline">
-      <span class="jdlineunderlinetitle">Interview process: </span>
-      <span class="jdlineunderlinecontent">1 Round F2F Interview + 1 Vitual Round</span><br>
-    </P>
+    <p style="text-align: left; background-color: white;"><span><strong>Role:</strong> Receptionist/Office Administrator</span><br /><span><strong>Location:</strong> Bandra, Mumbai, Maharashtra</span><br /><span><strong>Experience:</strong> 5-6 Years</span><br /><span><strong>Education:</strong> Graduate - B.Com or BSC Preferred</span><br /><span><strong>Gender:</strong> Female Candidates only</span><br /><span><strong>Work Mode:</strong> Work From Office</span><br /><span><strong>Interview Mode:</strong> Face to Face</span><br /><br /><strong>Responsibilities:</strong></p>
+    <ul>
+    <li><span>Receptionist cum Officer - Administration</span></li>
+    <li><span>Manage reception / EPABX activities</span></li>
+    <li><span>Managing and arrangement of Meeting/Events/Guest/Pantry</span></li>
+    <li><span>Printing and stationery (procurement and disbursement)</span></li>
+    <li><span>Travel (ticket booking, currency etc) and Hotel Management</span></li>
+    <li><span>Vendor Management/Vendor Development</span></li>
+    <li><span>Housekeeping Management</span></li>
+    <li><span>Generating MIS and database management</span></li>
+    <li><span>Cost reduction and cost control</span></li>
+    <li><span>Office Infrastructure management / AMC renewals</span></li>
+    <li><span>Dispatch Managemen</span></li>
+    <li><span>Office boys' management</span></li>
+    <li><span>Fixed asset management / Capex generation / GRN</span></li>
+    <li><span>Petty cash management</span></li>
+    <li><span>Pantry Management</span></li>
+    <li><span>Security Management</span></li>
+    <li><span>HR activities - new recruit joining formalities, attendance, exit formalities etc.</span></li>
+    <li><span>Other requirements: Graduate (BCom/ B.Sc.)</span></li>
+    <li><span>Proven work experience in administration</span></li>
+    <li><span>Ability to work under pressure and multitasking</span></li>
+    <li><span>High level of verbal and written communication skills</span></li>
+    <li><span>Excellent interpersonal skills</span></li>
+    <li><span>Strong Negotiation skills</span></li>
+    <li><span>Ability to act with integrity, professionalism and confidentiality</span></li>
+    <li><span>Well verse with MS office (word / excel /PPT)</span></li>
+    <li><span>Knowledge of SAP would be preferred</span></li>
+    </ul>
+    <p style="text-align: left;"><br /><strong>Mandatory Skills Required:</strong><br /><span>Manage reception, MIS, Asset Management, Capex Management, Administration Operations, Excel</span></p>
     
     <a href="https://jobnexusindia.odoo.com/" class="jdapplybutton">Apply Now</a>
  </div>
 
-<footer class="container2">
-    <div class="box1">
-        <p class="footerheading">Important Notice</p>
-        <p class="footercontent">Job Nexus India emphasize ethical recruitment practices and we Job Nexus India will never charge candidates for any part of the recruitment process. Please be cautious of any fraudulent activities.</p>
-    </div>
-    <div class="box2">
-        <p class="footerheading">For any inquiries or assistance with technical issues while filling out the job application form, please contact us:</p>
-        <p class="footercontent">hello@jobnexusindia.com <br>7899586564 (Whatsapp)</p>
-    </div>
-    <div class="box3">
-        <p class="footerheading">Join us on your preferred social media platforms to never miss job updates</p>
-        <p class="footercontent" style="margin-top: 5px;">Click on the icons given below to join.</p>
-            <div class="icon-container">
-                <span><a href="https://in.linkedin.com/company/jobnexusindia" alt:"Job Nexus India Job Updates Linkedin Company Page Link" class="icon-link">
-                    <i class="fab fa-linkedin-in"></i>
-                    </a></span>                
-                <span><a href="https://chat.whatsapp.com/CLUuvoRuViAF77TGPbSAom" alt:"Job Nexus India Job Updates Whatsapp Group Link" class="icon-link2">
-                    <i class="fab fa-whatsapp"></i>
-                    </a></span>
-                <span><a href="https://t.me/jobnexusindia" alt:"Job Nexus India Telegram Channel Link" class="icon-link">
-                     <i class="fab fa-telegram"></i>
-                    </a></span>
-            </div>
-        </div>
-    </footer>
-
+ <footer class="container2">
+  <div class="box1">
+      <p class="footerheading">Important Notice</p>
+      <p class="footercontent">We emphasize ethical recruitment practices and you that Job Nexus India will never charge candidates for any part of the recruitment process. Please be cautious of any fraudulent activities.</p>
+  </div>
+  <div class="box2">
+      <p class="footerheading">For any inquiries or assistance with technical issues while filling out the job application form, please contact us:</p>
+      <p class="footercontent">hello@jobnexusindia.com <br>7899586564 (Whatsapp)</p>
+  </div>
+  <div class="box3">
+      <p class="footerheading">Join us on your preferred social media platforms to never miss job updates</p>
+      <p class="footercontent" style="margin-top: 5px;">Click on the icons given below to join.</p>
+          <div class="icon-container">
+              <span><a href="#" class="icon-link">
+                  <i class="fab fa-linkedin-in"></i>
+                  </a></span>                
+              <span><a href="#" class="icon-link2">
+                  <i class="fab fa-whatsapp"></i>
+                  </a></span>
+              <span><a href="#" class="icon-link">
+                   <i class="fab fa-telegram"></i>
+                  </a></span>
+          </div>
+      </div>
+  </footer>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-    <!-- <div class="jdshortdetailscontainer">
-      <div>
-          <span class="jdshortitle">Industry</span><br>
-          <span class="jdshortitlecontent">BPO</span>
-      </div>
-      <div>
-        <span class="jdshortitle">Location</span><br>
-        <span class="jdshortitlecontent">Bangalore, Karnataka</span>
-      </div>
-      <div>
-        <span class="jdshortitle">Experience</span><br>
-        <span class="jdshortitlecontent">1-3 Years</span>
-      </div>
-      <div>
-        <span class="jdshortitle">Education</span><br>
-        <span class="jdshortitlecontent">Any Graduate</span>
-      </div>
-    </div> -->
-    <!-- <div class="jdshortdetailscontainer">
-      <div>
-        <span class="jdshortitle">Salary</span><br>
-        <span class="jdshortitlecontent">Best in the Industry</span>
-      </div>
-      <div>
-        <span class="jdshortitle">Interview process</span><br>
-        <span class="jdshortitlecontent">1 Round F2F Interview + 1 Vitual Round</span>
-      </div>
-      <div>
-        <span class="jdshortitle">Notice Period</span><br>
-        <span class="jdshortitlecontent">30 Days</span>
-      </div>
-    </div> -->
-
-        <!-- <h3>Roles and Responsibilities</h3>
-    <ul>
-      <li>Bachelor's degree in Computer Science or related field</li>
-      <li>3+ years of experience in software development</li>
-      <li>Proficiency in Java and Python</li>
-    </ul> -->
-    <!-- <h3>Mandatory Requirements</h3>
-    <ul>
-      <li>Collaborate with cross-functional teams to define, design, and ship new features</li>
-      <li>Work on bug fixing and improving application performance</li>
-      <li>Continuously discover, evaluate, and implement new technologies to maximize development efficiency</li>
-    </ul> -->
-
-    <!-- <h3>Job Description</h3>
-    <p>Design, develop, and maintain software applications using the latest technologies.</p> -->
-
-
-
-    <!-- <h3>Roles and Responsibilities</h3>
-    <ul>
-      <li>Bachelor's degree in Computer Science or related field</li>
-      <li>3+ years of experience in software development</li>
-      <li>Proficiency in Java and Python</li>
-    </ul>
-
-    <h3>Mandatory Requirements</h3>
-    <ul>
-      <li>Collaborate with cross-functional teams to define, design, and ship new features</li>
-      <li>Work on bug fixing and improving application performance</li>
-      <li>Continuously discover, evaluate, and implement new technologies to maximize development efficiency</li>
-    </ul> -->
