@@ -71,7 +71,7 @@ nav{
   background: white;
   align-items: center;
   justify-content: space-between;
-  padding: 0 180px 0 180px;
+  padding: 0 150px 0 150px;
   flex-wrap: wrap;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
@@ -234,8 +234,8 @@ input[type="checkbox"]{
   background: white;
   margin-bottom: 40px;
   margin-top: 40px;
-  margin-left: 13%;
-  margin-right: 13%;
+  margin-left: 7%;
+  margin-right: 7%;
 }
 
 .detail-itemheading {
