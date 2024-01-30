@@ -34,6 +34,21 @@
   background: white;
 }
 
+@media (max-width: 780px) {
+  .filtercontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .searchjobbylocation{
+    margin-top: 40px;
+    margin-bottom: -10px
+  }
+  .filtercontainer{
+    margin: -10px
+  }
+}  
+
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
