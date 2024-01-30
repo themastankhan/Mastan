@@ -45,10 +45,23 @@
 </h1>
 </header>
 
-<a href="jd/0001.html" class="containerjobinfo" style="text-decoration: none;" >
-    <div class="inner-box1" style="background-color: white;">
+<div class="filtercontainer">
+<span class="searchjobbylocation">Search Jobs by Location</span>
+<select id="location-filter">
+  <option value="">Reset</option>
+  <option value="Bengaluru, Karnataka">Bengaluru, Karnataka</option>
+  <option value="Delhi, Uttar Pradesh">Delhi, Uttar Pradesh</option>
+  <option value="Chennai,Tamil Nadu">Chennai</option>
+  <option value="Madhya Pradesh">Madhya Pradesh</option>
+</select>
+</div>
+
+<div class="jbcontainer"> 
+  <div class="jbjb">  
+    <a href="jd/0001.html" class="containerjobinfo" style="text-decoration: none; " >
+    <div class="inner-box1" style="background-color: white;  " >
       <span class="detail-itemheading" id="itemheading">Job Title/Role</span><br>
-      <span class="detail-itemcontenttitle" id="header" >Talent Acquisition Specialist</span>
+      <span class="detail-itemcontenttitle" id="header" >Talent Acquisition Specialist - Head HRBP</span>
     </div>
     <div class="inner-box2" style="background-color: white;">
       <span class="detail-itemheading"  id="itemheading" >Experience Required</span><br>
@@ -57,21 +70,54 @@
     <div class="inner-box3" style="background-color: white;">
       <span class="detail-itemheading"  id="itemheading" >Work Location</span><br>
       <span class="detail-itemcontent" id="itemcontent" >Bengaluru, Karnataka</span>
-    </div>
-  </div></a>
-  <a href="jd/0001.html" class="containerjobinfo" style="text-decoration: none;" >
-    <div class="inner-box1" style="background-color: white;">
-      <span class="detail-itemheading" id="itemheading">Job Title/Role</span><br>
-      <span class="detail-itemcontenttitle" id="header" >Talent Acquisition Specialist</span>
-    </div>
-    <div class="inner-box2" style="background-color: white;">
-      <span class="detail-itemheading"  id="itemheading" >Experience Required</span><br>
-      <span class="detail-itemcontent" id="itemcontent" >1-3 Years</span>
-    </div>
-    <div class="inner-box3" style="background-color: white;">
-      <span class="detail-itemheading"  id="itemheading" >Work Location</span><br>
-      <span class="detail-itemcontent" id="itemcontent" >Bengaluru, Karnataka<br> Delhi, Uttar Pradesh<br> Chennai,Tamil Nadu</span>
     </div></a>
+  </div> 
+  <div class="jbjb">  
+      <a href="jd/0001.html" class="containerjobinfo" style="text-decoration: none;" >
+      <div class="inner-box1" style="background-color: white;">
+        <span class="detail-itemheading" id="itemheading">Job Title/Role</span><br>
+        <span class="detail-itemcontenttitle" id="header" >Talent Acquisition Specialist</span>
+      </div>
+      <div class="inner-box2" style="background-color: white;">
+        <span class="detail-itemheading"  id="itemheading" >Experience Required</span><br>
+        <span class="detail-itemcontent" id="itemcontent" >1-3 Years</span>
+      </div>
+      <div class="inner-box3" style="background-color: white;">
+        <span class="detail-itemheading"  id="itemheading" >Work Location</span><br>
+        <span class="detail-itemcontent" id="itemcontent" >Madhya Pradesh</span>
+        </div></a>
+    </div>
+    <div class="jbjb">  
+    <a href="jd/0001.html" class="containerjobinfo" style="text-decoration: none;" >
+      <div class="inner-box1" style="background-color: white;">
+        <span class="detail-itemheading" id="itemheading">Job Title/Role</span><br>
+        <span class="detail-itemcontenttitle" id="header" >Talent Acquisition Specialist</span>
+      </div>
+      <div class="inner-box2" style="background-color: white;">
+        <span class="detail-itemheading"  id="itemheading" >Experience Required</span><br>
+        <span class="detail-itemcontent" id="itemcontent" >1-3 Years</span>
+      </div>
+      <div class="inner-box3" style="background-color: white;">
+        <span class="detail-itemheading"  id="itemheading" >Work Location</span><br>
+        <span class="detail-itemcontent" id="itemcontent" >Madhya Pradesh</span>
+      </div></a>
+    </div>
+    <div class="jbjb">  
+      <a href="jd/0001.html" class="containerjobinfo" style="text-decoration: none;" >
+        <div class="inner-box1" style="background-color: white;">
+          <span class="detail-itemheading" id="itemheading">Job Title/Role</span><br>
+          <span class="detail-itemcontenttitle" id="header" >Customer Support Executive</span>
+        </div>
+        <div class="inner-box2" style="background-color: white;">
+          <span class="detail-itemheading"  id="itemheading" >Experience Required</span><br>
+          <span class="detail-itemcontent" id="itemcontent" >1-3 Years</span>
+        </div>
+        <div class="inner-box3" style="background-color: white;">
+          <span class="detail-itemheading"  id="itemheading" >Work Location</span><br>
+          <span class="detail-itemcontent" id="itemcontent" >Bengaluru, Karnataka<br> Delhi, Uttar Pradesh<br> Chennai,Tamil Nadu</span>
+        </div></a>
+      </div>
+</div>      
 
 <footer class="container2">
     <div class="box1">
@@ -98,5 +144,26 @@
             </div>
         </div>
 </footer>
+
+
+<script>
+const locationFilter = document.getElementById("location-filter");
+const jobContainers = document.getElementsByClassName("jbjb");
+
+locationFilter.addEventListener("change", () => {
+  for (let i = 0; i < jobContainers.length; i++) {
+    const jobContainer = jobContainers[i];
+    const location = jobContainer.querySelector(".inner-box3 .detail-itemcontent").innerText.trim();
+
+    if (locationFilter.value === "" || location.includes(locationFilter.value)) {
+      jobContainer.classList.remove("hidden");
+    } else {
+      jobContainer.classList.add("hidden");
+    }
+  }
+});
+</script>
+
+
 </body>
 </html>
