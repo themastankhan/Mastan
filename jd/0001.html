@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
- <title>Receptionist/Office Administrator - 5-6 Years - Bandra, Mumbai, Maharashtra | Job Nexus India</title>
+ <title> Receptionist/Office Administrator - 5-6 Years - Bandra, Mumbai, Maharashtra | Job Nexus India</title>
 
  <style>
   * {
@@ -32,128 +32,179 @@
   border: none;
  }
 
- /* Navigation Bar */
- .navbar {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    background-color: white;
-    padding-left: 50px;
-    padding-right: 50px;  
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
-    font-size: 20px;
-  }
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
 
-  .navbar-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    background-color: white;
-    column-gap: 30px;
-    font-size: 20px;
-    padding: 15px; 
-    transition: transform 0.2s ease-in-out; /* added transition property */
-  }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 150px 0 150px;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+nav .logo{
+  color: black;
+  font-size: 30px;
+  font-family: 'arima madurai';
+  font-weight: bold;
+}
 
-  .nav-item {
-    margin-right: 1rem;
-    background-color: white;
-    margin: 0;
-    transition: transform 0.1s, border-color 0.1s; / added transition property 
+.logo{
+  text-decoration: none;}
 
-  }
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  background: white;
+}
+nav ul li{
+margin-top: 20px;
+margin-bottom: 10px;
+margin-left: 20px;
+margin-right: 20px;
+}
+nav ul li a{
+  color: black;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  /* padding: 40px 15px 15px; */
+  border-radius: 5px;
+  letter-spacing: 1px;
+  /* transition: all 0.3s ease; */
+}
+/* nav ul li a,
+nav ul li a{
+  color: black;
+  background: #e6e6fa;
+} */
+nav .menu-btn i{
+  color: black;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
 
-  .nav-link {
-    color: #464646;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.2s;
-    font-size: 15px;
-    /* border: 3px solid #666666; */
-    border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
-    /* box-shadow: inset; */
-    padding: 10px 15px 10px 15px;
-    transition: transform 0.1s, border-color 0.1s; / added transition property 
-  }
-
-  .nav-link:hover {
+/* nav ul li a.active:{
+    background: #e6e6fa;
     color: #007bff;
-    transform: scale(1.1); /* added transform property */
+    font-weight: bold;
+  } */
+
+  nav ul li a {
+    color: black;
+    background: white;
+    }
+
+    nav ul li a.active{
+      background: white;
+        color: #007bff;
+        font-weight: bold;
+    }
+
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
   }
-  .nav-item{
-    color: #007bff;
-    transform: scale(1.1); /* added transform property */
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 50px;
+    left: -100%;
+    background: white;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
   }
 
-  .navbar-brand {
-    font-family: 'Arima Madurai';
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 35px;
-    justify-content: center;
-    padding: 15px;
-    padding-top: 20px;
+    nav ul li a {
+    color: black;
+    background: white;
+    }
+
+    nav ul li a.active{
+      background: white;
+        color: #007bff;
+        font-weight: bold;
+    }
+
+    nav .logo {
+    font-size: 20px;
     font-weight: bold;
   }
-
-  .navbar-brand-text {
-    color: #464646;
-    font-weight: bold;
-    margin-left: 0.5rem;
+  nav{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;
   }
-
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      background-color: white;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
-    }
-
-    .nav-link{
-      font-size: 12px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
-      padding-left: 10px;
-      padding-right: 10px;
-      padding-bottom: 5px;
-      padding-top: 5px;
-    }
-
-    .navbar-nav {
-      /* flex-direction: column; */
-      background-color: white;
-      column-gap: 10px;
-      padding: 0;
-    }
-
-    .nav-item {
-      margin: 0.5rem 0;
-      padding: 5px;
-    }
-
-    .navbar-brand {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      font-size: 30px;
-      font-weight: bold;
-      justify-content: center;
-      padding: 0px;
-      font-family: 'Arima Madurai';
-    }
-
-    .navbar-brand-text {
-      display: none;
-      margin-left: 5px;
-    }
-  }
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 0 30px;
+  color: #1b1b1b;
+}
+.content div{
+  font-size: 40px;
+  font-weight: 700;
+}
 
  .jdcontainer {
   max-width: 700px;
@@ -446,28 +497,21 @@ footer{
  </style>
 </head>
 
-
-
-<nav class="navbar">
-  <a href="#" class="navbar-brand">
-    Job Nexus India
-  </a>
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a href="./" class="nav-link">Home</a>
-    </li>
-    <li class="nav-item">
-      <a href="https://www.linkedin.com/company/jobnexusindia" class="nav-link">About Us</a>
-    </li>
-    <!-- <li class="nav-item">
-      <a href="#" class="nav-link">Blogs</a>
-    </li> -->
+<nav>
+  <a class="logo" href="https://www.jobnexusindia.com/"><div class="logo">Job Nexus India</div></a>
+  <input type="checkbox" id="click">
+  <label for="click" class="menu-btn">
+    <i class="fas fa-bars"></i>
+  </label>
+  <ul>
+    <li><a href="https://www.jobnexusindia.com/">Current Openings</a></li>
+    <li><a href="about-us.html">About Us</a></li>
   </ul>
 </nav>
 
 <body>
  <div class="jdcontainer">
-    <h1 class="jdtitle">Customer Support Executive</h1>
+    <h1 class="jdtitle">Receptionist/Office Administrator</h1>
 
     <p style="text-align: left; background-color: white;"><span><strong>Role:</strong> Receptionist/Office Administrator</span><br /><span><strong>Location:</strong> Bandra, Mumbai, Maharashtra</span><br /><span><strong>Experience:</strong> 5-6 Years</span><br /><span><strong>Education:</strong> Graduate - B.Com or BSC Preferred</span><br /><span><strong>Gender:</strong> Female Candidates only</span><br /><span><strong>Work Mode:</strong> Work From Office</span><br /><span><strong>Interview Mode:</strong> Face to Face</span><br /><br /><strong>Responsibilities:</strong></p>
     <ul>
