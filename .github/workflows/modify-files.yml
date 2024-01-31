@@ -1,0 +1,32 @@
+name: Modify files, git commit and push
+
+on:
+  push:
+    branches:
+      - '**'      # matches every branch
+      - '!main'   # excludes main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: "Run replacement scripts to fix Webflow's bad export" 
+        run: |
+          find . -type f -name '*.html' -print0 | while IFS= read -r -d '' file; do
+            mv -- "$file" "${file%.html}"
+          done
+
+          find . -type f -name '*.html' -print0 | while IFS= read -r -d '' file; do
+            sed -i 's/\(.*\)\.html/\1\//g' "$file"
+          done
+
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Remove .html from file names and paths"
+          git push
