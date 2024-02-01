@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <link href='https://fonts.googleapis.com/css?family=Arima Madurai' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <title>Thank You! | Job Nexus India</title>
+  <meta name="description" content="Job Nexus India's client is hiring a Receptionist / Office Administrator in Mumbai, Maharashtra">
+  <meta property="og:image" content="https://github.com/themastankhan/Mastan/raw/main/0001.png">
+  <meta property="og:url" content="https://www.jobnexusindia.com/jd/jd0001.html">
+  <meta property="og:type" content="article">
+
+
+<style>
+  * {
+  margin: 0;
+  background-color: white;
+  padding: 0;
+  height: auto;
+  width: auto;
+  border: none;
+ }
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 150px 0 150px;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+nav .logo{
+  color: black;
+  font-size: 30px;
+  font-family: 'arima madurai';
+  font-weight: bold;
+  padding-top: 3px;
+}
+
+.logo{
+  text-decoration: none;}
+
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  background: white;
+  margin-top: -3px;
+}
+nav ul li{
+margin-top: 20px;
+margin-bottom: 10px;
+margin-left: 20px;
+margin-right: 20px;
+}
+nav ul li a{
+  color: black;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  /* padding: 40px 15px 15px; */
+  border-radius: 5px;
+  letter-spacing: 1px;
+  /* transition: all 0.3s ease; */
+}
+/* nav ul li a,
+nav ul li a{
+  color: black;
+  background: #e6e6fa;
+} */
+nav .menu-btn i{
+  color: black;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+
+/* nav ul li a.active:{
+    background: #e6e6fa;
+    color: #007bff;
+    font-weight: bold;
+  } */
+
+  nav ul li a {
+    color: black;
+    background: white;
+    }
+
+    nav ul li a.active{
+      background: white;
+        color: #007bff;
+        font-weight: bold;
+    }
+
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: absolute;
+    top: 50px;
+    left: -100%;
+    background: white;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+
+    nav ul li a {
+    color: black;
+    background: white;
+    }
+
+    nav ul li a.active{
+      background: white;
+        color: #007bff;
+        font-weight: bold;
+    }
+
+    nav .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  nav{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;
+  }
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 0 30px;
+  color: #1b1b1b;
+}
+.content div{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.container2 {
+  margin: 0;
+  margin-top: 50px;
+  /* margin-left: 20px;
+  margin-right: 20px; */
+  /* border: 1px solid #000; */
+  /* column-gap: 20px; */
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+  justify-content: center; changed from 'center' to 'space-around'
+  box-sizing: border-box;
+  background-color: white;
+  color: white;
+  /* align-items: center;
+  align-content: center; */
+} 
+
+footer {
+border-top: 1px solid #000;
+position: static;
+bottom: 0;
+box-sizing: border-box;
+padding-top: 20px;
+padding-bottom: 20px;
+
+left: 0;
+right: 0;
+column-gap: 40px;
+}
+
+.footerheading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  justify-content: center;
+  margin: 10px;
+  color: black;
+  line-height: normal;
+  }
+ 
+ 
+.footercontent {
+  font-family: 'inter', sans-serif;
+  font-size: 18px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-align: left;
+  margin: 10px;
+  color: black;
+ }
+
+ @media only screen and (max-width: 768px) {
+  .footerheading {
+      font-size: 17px;
+      margin-bottom: 7px;
+  }
+  .container2 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .footercontent {
+      font-size: 16px;
+      margin-top: 7px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .footerheading {
+      font-size: 18px;
+      margin-bottom: 10px;
+  }
+  .footercontent {
+      font-size: 15px;
+      margin-top: 10px;
+  }
+  .icon-link, .icon-link2 {
+      font-size: 1rem;
+  }
+}    
+
+  .icon-link, .icon-link2 {
+      font-size: 1rem;
+  }
+}    
+
+.box1, .box2, .box3 {
+  box-sizing: border-box; /* added 'border-box' to include padding and border in the box's total width and height */
+ }
+ 
+ 
+.icon-container {
+  display: flex;
+  text-align: left;
+  margin-left: 6px;
+ }
+ 
+ 
+.icon-link, .icon-link2 {
+  margin: 5px;
+  color: black;
+  text-decoration: none;
+  font-size: 2.5rem;
+ }
+ 
+.icon-link:hover {
+  color: #007bff;
+ }
+
+.icon-link2:hover{
+  color: green;
+}   
+ 
+.box3 {
+     width: 400px;
+ }
+ 
+ 
+.box1 {
+     width: 400px;
+ }
+ 
+ 
+.box2 {
+     width: 400px;
+ }
+
+footer{
+  margin-top: auto;
+}
+
+.box1 .box2 .box3 {
+  width: 100%;
+  justify-content: space-around; (for the icon-container)
+}
+
+.content-wrapper { flex: 1; padding: 0 30px; } 
+
+
+.jdc{
+    border: 2px solid #000;
+    max-width: 800px;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 35px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* text-align: center; */
+}
+
+h1{
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-family: 'montserrat';
+}
+
+h2{
+    margin-bottom: 3px;
+    font-family: 'montserrat';
+    line-height: 1.15;
+}
+
+.jdc ul{
+    margin-left: 15px;
+}
+
+.jdapplybutton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+    .jdc{
+        border: 2px solid #000;
+        max-width: 320px;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 1rem;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    p{
+        font-size: 16px;
+        font-family: 'inter', sans-serif;
+    }
+    .jdc ul{
+        font-size: 14px;
+        margin-left: 15px;
+    }
+}    
+
+/* .benefits {
+      margin-top: 30px;
+      text-align: left;
+    }
+
+    .benefits h2 {
+      color: #333;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    .benefits ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .benefits li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    } */
+
+</style>
+</head>
+<body>
+   
+<nav>
+    <a class="logo" href="https://www.jobnexusindia.com/"><div class="logo">Job Nexus India</div></a>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a href="https://www.jobnexusindia.com/">Current Openings</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+    </ul>
+  </nav>
+
+<div class="jdc">
+    <h1 style="color: green;">Thank You!</span></h1>
+    <h2>Your application has been sent successfully</h2>
+    <p>We will thoroughly review your application and contact you if your resume is shortlisted during the screening process.</p><br>
+    <h2>Join us on your preferred social media platforms to never miss job updates</h2><br>
+    <div class="benefits">
+      <h3>Benefits:</h3>
+      <ul>
+        <li>🚀 Receive exclusive updates on actively hiring positions.</li>
+        <li>📌 No spam or irrelevant messages; we respect your time.</li>
+        <li>🔒 Your privacy is a priority; your contact is visible only to the admin.</li>
+        <li>📵 No promotions, just focused job updates.</li>
+        <li>💸 We believe in empowering candidates; no fees for you.</li>
+      </ul>
+    </div><br>
+    <p>Click on the icons given below to join.</p>
+    <div class="icon-container" style="margin-top: 5px; margin-left: -3px;">
+        <span><a href="#" class="icon-link">
+            <i class="fab fa-linkedin-in"></i>
+            </a></span>                
+        <span><a href="#" class="icon-link2">
+            <i class="fab fa-whatsapp"></i>
+            </a></span>
+        <span><a href="#" class="icon-link">
+             <i class="fab fa-telegram"></i>
+            </a></span>
+    </div>
+    <!-- <div class="benefits">
+      <h2>Benefits:</h2>
+      <ul>
+        <li>🚀 Receive exclusive updates on actively hiring positions.</li>
+        <li>📌 No spam or irrelevant messages; we respect your time.</li>
+        <li>🔒 Your privacy is a priority; your contact is visible only to the admin.</li>
+        <li>📵 No promotions, just focused job updates.</li>
+        <li>💸 We believe in empowering candidates; no fees for you.</li>
+      </ul>
+    </div> -->
+</div>
+    
+
+<footer class="container2">
+    <div class="box1">
+        <p class="footerheading">Important Notice</p>
+        <p class="footercontent">We emphasize ethical recruitment practices and you that Job Nexus India will never charge candidates for any part of the recruitment process. Please be cautious of any fraudulent activities.</p>
+    </div>
+    <div class="box2">
+        <p class="footerheading">For any inquiries or assistance with technical issues while filling out the job application form, please contact us:</p>
+        <p class="footercontent">hello@jobnexusindia.com <br>7899586564 (Whatsapp)</p>
+    </div>
+    <div class="box3">
+        <p class="footerheading">Join us on your preferred social media platforms to never miss job updates</p>
+        <p class="footercontent" style="margin-top: 5px;">Click on the icons given below to join.</p>
+            <div class="icon-container">
+                <span><a href="#" class="icon-link">
+                    <i class="fab fa-linkedin-in"></i>
+                    </a></span>                
+                <span><a href="#" class="icon-link2">
+                    <i class="fab fa-whatsapp"></i>
+                    </a></span>
+                <span><a href="#" class="icon-link">
+                     <i class="fab fa-telegram"></i>
+                    </a></span>
+            </div>
+        </div>
+    </footer>   
+
+</body>
+</html>
