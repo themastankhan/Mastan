@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="msvalidate.01" content="A4D40B1AA5475B07D06649F7D8970D5F" />
+  <meta name="verify-v1" content="unique-string">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/png" href="https://github.com/themastankhan/Mastan/raw/main/Job-Nexus-India-Logo.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
@@ -18,439 +21,440 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
   <title>About Us | Job Nexus India</title>
   <meta name="description" content="Welcome to Job Nexus India - 'Bridging Talent with Opportunities'. We are a dedicated platform committed to connecting job seekers with potential employers, fostering a community that thrives on mutual growth and success.">
- 
- <style>
-* {
+
+  <style>
+    * {
     margin: 0;
     background: white;
     padding: 0;
     height: auto;
     width: auto;
+    box-sizing: border-box;
     border: none;
-}
+    /* font-family: Arial, Helvetica, sans-serif; */
+   }
+  
+  nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 125px 0 130px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid black;
+  }
+  nav .logo{
+    color: black;
+    font-size: 30px;
+    font-family: 'arima madurai';
+    font-weight: bold;
+  }
+  
+  .logo{
+    text-decoration: none;}
+  
+  nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    background: white;
+  }
+  nav ul li{
+  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 5px;
+  }
+  nav ul li a{
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    /* padding: 40px 15px 15px; */
+    border-radius: 5px;
+    letter-spacing: 1px;
+    /* transition: all 0.3s ease; */
+    font-family: Arial, Helvetica, sans-serif; 
+  }
+  /* nav ul li a,
+  nav ul li a{
+    color: black;
+    background: #e6e6fa;
+  } */
+  nav .menu-btn i{
+    color: black;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+  }
+  input[type="checkbox"]{
+    display: none;
+  }
+  
+  /* nav ul li a.active:{
+      background: #e6e6fa;
+      color: #007bff;
+      font-weight: bold;
+    } */
+  
+    nav ul li a {
+      color: black;
+      background: white;
+      }
+  
+      nav ul li a.active{
+        /* font-weight: bold; */
+          padding: 10px;
+          padding-left: 0;
+          padding-right: 0;
+          border-radius: 0;
+          border-bottom: 5px solid #1c4587;
+      }
+  
+  @media (max-width: 1000px){
+    nav{
+      padding: 0 30px 0 50px;
+    }
+  }
+  @media (max-width: 920px) {
+    nav .menu-btn i{
+      display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+      content: "\f00d";
+    }
+    nav ul{
+      position: fixed;
+      top: 50px;
+      left: -100%;
+      background: white;
+      height: 100vh;
+      width: 100%;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+      left: 0;
+    }
+    nav ul li{
+      width: 100%;
+      margin: 40px 0;
+    }
+    nav ul li a{
+      width: 100%;
+      margin-left: -100%;
+      display: block;
+      font-size: 20px;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    #click:checked ~ ul li a{
+      margin-left: 0px;
+    }
+  
+      nav ul li a {
+      color: black;
+      background: white;
+      }
+  
+      nav ul li a.active{
+        background: white;
+          color: #1c4587;
+          font-weight: bold;
+          border: white;
+      }
+  
+      nav .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    nav{
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 0;
+      padding-bottom: 0;
+      height: 50px;
+    }
+  }
+  .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: -1;
+    width: 100%;
+    padding: 0 30px;
+    color: #1b1b1b;
+  }
+  .content div{
+    font-size: 40px;
+    font-weight: 700;
+  }
 
-
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
+/* below item is related to footer */
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set a minimum height of the body to fill the viewport */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-} 
-        nav{
-        display: flex;
-        height: 80px;
-        width: 100%;
-        background: white;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 150px 0 150px;
-        flex-wrap: wrap;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
-        margin-bottom: 40px;
-        }
-        nav .logo{
-        color: black;
-        font-size: 30px;
-        font-family: 'arima madurai';
-        font-weight: bold;
-        }
-
-        .logo{
-        text-decoration: none;}
-
-        nav ul{
-        display: flex;
-        flex-wrap: wrap;
-        list-style: none;
-        background: white;
-        margin-bottom: 10px;
-        }
-        nav ul li{
-        margin-top: 20px;
-        margin-bottom: 10px;
-        margin-left: 20px;
-        margin-right: 20px;
-        }
-        nav ul li a{
-        color: black;
-        text-decoration: none;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-        text-align: center;
-        font-size: 18px;
-        font-weight: 500;
-        /* padding: 40px 15px 15px; */
-        border-radius: 5px;
-        letter-spacing: 1px;
-        /* transition: all 0.3s ease; */
-        }
-        /* nav ul li a,
-        nav ul li a{
-        color: black;
-        background: #e6e6fa;
-        } */
-        nav .menu-btn i{
-        color: black;
-        font-size: 22px;
-        cursor: pointer;
-        display: none;
-        }
-        input[type="checkbox"]{
-        display: none;
-        }
-
-        /* nav ul li a.active:{
-            background: #e6e6fa;
-            color: #007bff;
-            font-weight: bold;
-        } */
-
-        nav ul li a {
-            color: black;
-            background: white;
-            }
-
-            nav ul li a.active{
-                background: white;
-                color: #007bff;
-                font-weight: bold;
-            }
-
-        @media (max-width: 1000px){
-        nav{
-            padding: 0 40px 0 50px;
-        }
-        }
-        @media (max-width: 920px) {
-        nav .menu-btn i{
-            display: block;
-        }
-        #click:checked ~ .menu-btn i:before{
-            content: "\f00d";
-        }
-        nav ul{
-            position: fixed;
-            top: 50px;
-            left: -100%;
-            background: white;
-            height: 100vh;
-            width: 100%;
-            text-align: center;
-            display: block;
-            transition: all 0.3s ease;
-        }
-        #click:checked ~ ul{
-            left: 0;
-        }
-        nav ul li{
-            width: 100%;
-            margin: 40px 0;
-        }
-        nav ul li a{
-            width: 100%;
-            margin-left: -100%;
-            display: block;
-            font-size: 20px;
-            transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        }
-        #click:checked ~ ul li a{
-            margin-left: 0px;
-        }
-
-            nav ul li a {
-            color: black;
-            background: white;
-            }
-
-            nav ul li a.active{
-                background: white;
-                color: #007bff;
-                font-weight: bold;
-            }
-
-            nav .logo {
-            font-size: 20px;
-              font-weight: bold;
-        }
-        nav{
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 0;
-            padding-bottom: 0;
-            height: 50px;
-        }
-        }
-        .content{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        z-index: -1;
-        width: 100%;
-        padding: 0 30px;
-        color: #1b1b1b;
-        }
-        .content div{
-        font-size: 40px;
-        font-weight: 700;
-        }
-
-
-    .jdcontainer{
-        max-width: 700px;
-    margin: 0 auto;
-    padding: 10px;
-    padding-top: 10px;
-    border: 2px solid #000;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    /* margin-left: 10px;
-    margin-right: 10px; */
+  }
+  
+  .footer {
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
     background-color: white;
+    flex-wrap: wrap;
+    /* box-shadow:  0 -2px 5px rgba(0, 0, 0, 0.8); */
+    border-top: 1px solid black;
+  }
+
+@media only screen and (max-width: 768px) {
+    .footer {
+      position: relative;
+      padding: 20px 10px; /* Adjust padding for mobile view */
+      margin-top: auto;
+    }
+    html {
+        position: relative;
+        min-height: 100%;
     }
 
-    h1{
-        background-color: white;
-        margin-top: 20px; 
-        margin-bottom: 15px;
-        padding-left: 20px; 
-        padding-right: 20px;
-    }
-    p{
-        background-color: white; padding-left: 20px; padding-right:20px;
-    }
-
-    @media only screen and (max-width: 768px) {
-    .jdcontainer {
-        max-width: 320px;
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* Set a minimum height of the body to fill the viewport */
+        margin: 0;
         padding: 0;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        }
-        h1{
-            font-size: 25px;
-            margin-top: 15px;
-        }
-        p{
-            font-size: 14px;
-        }
     }
-
-.container2 {
-  margin: 0;
-  margin-top: 30px;
-  /* margin-left: 20px;
-  margin-right: 20px; */
-  /* border: 1px solid #000; */
-  /* column-gap: 20px; */
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  flex-flow: wrap;
-  justify-content: center; changed from 'center' to 'space-around'
-  box-sizing: border-box;
-  background: white;
-  color: white;
-  /* align-items: center;
-  align-content: center; */
-} 
-
-footer {
-border-top: 1px solid #000;
-position: static;
-bottom: 0;
-box-sizing: border-box;
-padding-top: 20px;
-padding-bottom: 20px;
-
-left: 0;
-right: 0;
-column-gap: 40px;
-}
+      
+  
+    .box1, .box2, .box3 {
+      width: 100%; /* Set the width to 100% for mobile view */
+    }
+  
+    .icon-container {
+      text-align: left; /* Center align the icons for mobile view */
+      margin-left: 8px; 
+      margin-top: -3px;
+    }
+    p.footerheading {
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+    p.footercontent {
+        font-size: 14px;
+        margin-top: 4px;
+    }
+    a.icon-link{
+      font-size: 2rem;
+    }
+    a.icon-link2{
+      font-size: 2rem;
+    }
+  }
 
 .footerheading {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: left;
-  justify-content: center;
-  margin: 10px;
-  color: black;
-  line-height: normal;
-  background: white;
-  padding: 0;
-  }
- 
- 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    justify-content: center;
+    margin: 10px;
+    color: black;
+    line-height: normal;
+    }
+   
 .footercontent {
-  font-family: 'inter', sans-serif;
-  font-size: 18px;
-  line-height: 1.25;
-  font-weight: 400;
-  text-align: left;
-  margin: 10px;
-  color: black;
-  background: white;
-  padding: 0;
- }
+    font-family: 'inter', sans-serif;
+    font-size: 18px;
+    line-height: 1.25;
+    font-weight: 400;
+    text-align: left;
+    margin: 10px;
+    color: black;
+   }
+  
+   .box1, .box2, .box3 {
+    box-sizing: border-box; /* added 'border-box' to include padding and border in the box's total width and height */
+    width: 100%;
+    justify-content: space-around; (for the icon-container)
+   }
 
- @media only screen and (max-width: 768px) {
-  .footerheading {
-      font-size: 17px;
-      margin-bottom: 7px;
-  }
-  .container2 {
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 0;
-  }
-  .footercontent {
-      font-size: 16px;
-      margin-top: 7px;
-      padding: 0;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .footerheading {
-      font-size: 18px;
-      margin-bottom: 10px;
-      padding: 0;
-  }
-  .footercontent {
-      font-size: 15px;
-      margin-top: 10px;
-      padding: 0;
-  }
+   .icon-link, .icon-link2 {
+    font-size: 1rem;
+    }
+      
   .icon-link, .icon-link2 {
-      font-size: 1rem;
-  }
-}    
-
-  .icon-link, .icon-link2 {
-      font-size: 1rem;
-  }
-}    
-
-.box1, .box2, .box3 {
-  box-sizing: border-box; /* added 'border-box' to include padding and border in the box's total width and height */
- }
- 
- 
-.icon-container {
-  display: flex;
-  text-align: left;
-  margin-left: 6px;
- }
- 
- 
-.icon-link, .icon-link2 {
-  margin: 5px;
-  color: black;
-  text-decoration: none;
-  font-size: 2.5rem;
- }
- 
-.icon-link:hover {
-  color: #007bff;
- }
-
-.icon-link2:hover{
-  color: green;
-}   
- 
+    /* margin: 5px; */
+    color: black;
+    text-decoration: none;
+    font-size: 2.5rem;
+   }
+   
+  .icon-link:hover {
+    color: #007bff;
+   }
+  
+  .icon-link2:hover{
+    color: green;
+  }   
+   
 .box3 {
-     width: 400px;
- }
- 
- 
+    width: 350px;
+}
 .box1 {
-     width: 400px;
- }
- 
- 
+        width: 400px;
+}
 .box2 {
-     width: 400px;
- }
-
-footer{
-  margin-top: auto;
+        width: 400px;
 }
+  
+  .content-wrapper { flex: 1; padding: 0 30px; } 
 
-.box1 .box2 .box3 {
-  width: 100%;
-  justify-content: space-around; (for the icon-container)
-}
-
-.content-wrapper { flex: 1; padding: 0 30px; } 
-
-
- </style>
+  .icon-container{
+    text-align: left;
+    margin-left: 12px;
+  }
+ /*end of header and footer*/
  
-  <meta name="description" content="Welcome to Job Nexus India - 'Bridging Talent with Opportunities'. We are a dedicated platform committed to connecting job seekers with potential employers, fostering a community that thrives on mutual growth and success...">
+ 
+
+
+.bodybox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* max-width:7 00px; */
+}
+
+.bodycontainer{
+    max-width: 800px;
+    padding: 40px;
+    margin: 20px;
+    border: 1px solid black;
+    font-family: inter;
+}
+
+body .bodycontainer p {
+    font-family: 'inter';
+    font-size: 18px;
+}
+
+h1{
+  padding-bottom: 10px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    border-bottom: 2px solid #1c4587;
+}
+
+@media only screen and (max-width: 768px){
+  body .bodycontainer p{
+    font-size: 14px;
+  }
+  h1{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #1c4587;
+  }
+  .bodycontainer{
+    margin: 5px;
+    padding: 15px;
+    border: #fff;
+  }
+
+
+
+  </style>
 </head>
 <body>
 
-<nav>
-    <a class="logo" href="https://www.jobnexusindia.com/"><div class="logo">Job Nexus India</div></a>
-    <input type="checkbox" id="click">
-    <label for="click" class="menu-btn">
-      <i class="fas fa-bars"></i>
-    </label>
-    <ul>
-      <li><a href="https://www.jobnexusindia.com/">Current Openings</a></li>
-      <li><a class="active" href="about-us.html">About Us</a></li>
-    </ul>
-</nav>
+    <nav>
+        <a class="logo" href="https://www.jobnexusindia.com/"><div class="logo">Job Nexus India</div></a>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a  href="https://www.jobnexusindia.com/">Current Openings</a></li>
+          <li><a class="active"  href="about-us.html">About Us</a></li>
+        </ul>
+    </nav>
 
- <div class="jdcontainer" >
-    <h1 class="aboutustitle">About Us</h1>
 
-    <p class="aboutcontent">Welcome to Job Nexus India - 'Bridging Talent with Opportunities'. We are a dedicated platform committed to connecting job seekers with potential employers, fostering a community that thrives on mutual growth and success.</P><br>
+    <div class="bodybox" >
+        <div class="bodycontainer">
+            <h1>About Us</h1>
+            <p>Welcome to Job Nexus India - &#39;Bridging Talent with Opportunities&#39;. We are a dedicated platform committed to connecting job seekers with potential employers, fostering a community that thrives on mutual growth and success.<br />
+<br />
+Our mission is to streamline the job search process, making it more efficient and less daunting for candidates. We understand the challenges of job hunting and aim to alleviate them by providing a curated selection of job opportunities from various industries.<br />
+<br />
+We not only post job requirements for positions we are hiring for but also share opportunities forwarded by other HR professionals and sourced from various social media groups. Our goal is to ensure that no job opportunity goes unnoticed, and every candidate gets a fair chance to apply for roles that align with their skills and aspirations.<br />
+<br />
+In our pursuit to create a supportive ecosystem for job seekers, we have established dedicated WhatsApp and Telegram groups. These platforms serve as interactive forums where job seekers can engage, share opportunities, and support each other in their job search journey.<br />
+<br />
+At Job Nexus India, we believe in the power of community and collaboration. We are not just about connecting individuals to jobs; we are about building relationships, fostering growth, and empowering individuals to achieve their career goals.<br />
+<br />
+Join us in our mission to bridge talent with opportunities and transform the job search experience. Together, we can create a vibrant community that supports, uplifts, and propels each member towards their career aspirations.</p>
 
-    <p>Our mission is to streamline the job search process, making it more efficient and less daunting for candidates. We understand the challenges of job hunting and aim to alleviate them by providing a curated selection of job opportunities from various industries.</P><br>
-        
-    <p>We not only post job requirements for positions we are hiring for but also share opportunities forwarded by other HR professionals and sourced from various social media groups. Our goal is to ensure that no job opportunity goes unnoticed, and every candidate gets a fair chance to apply for roles that align with their skills and aspirations.</P><br>
-        
-    <p>In our pursuit to create a supportive ecosystem for job seekers, we have established dedicated WhatsApp and Telegram groups. These platforms serve as interactive forums where job seekers can engage, share opportunities, and support each other in their job search journey.</P><br>
-        
-    <p>At Job Nexus India, we believe in the power of community and collaboration. We are not just about connecting individuals to jobs; we are about building relationships, fostering growth, and empowering individuals to achieve their career goals.</P><br>
-        
-    <p>Join us in our mission to bridge talent with opportunities and transform the job search experience. Together, we can create a vibrant community that supports, uplifts, and propels each member towards their career aspirations.</P><br>
- </div>
-
-<footer class="container2">
-    <div class="box1">
-        <p class="footerheading">Important Notice</p>
-        <p class="footercontent">Job Nexus India emphasize ethical recruitment practices and we Job Nexus India will never charge candidates for any part of the recruitment process. Please be cautious of any fraudulent activities.</p>
-    </div>
-    <div class="box2">
-        <p class="footerheading">For any inquiries or assistance with technical issues while filling out the job application form, please contact us:</p>
-        <p class="footercontent">hello@jobnexusindia.com <br>7899586564 (Whatsapp)</p>
-    </div>
-    <div class="box3">
-        <p class="footerheading">Join us on your preferred social media platforms to never miss job updates</p>
-        <p class="footercontent" style="margin-top: 5px;">Click on the icons given below to join.</p>
-            <div class="icon-container">
-                <span><a href="https://in.linkedin.com/company/jobnexusindia" alt:"Job Nexus India Job Updates Linkedin Company Page Link" class="icon-link">
-                    <i class="fab fa-linkedin-in"></i>
-                    </a></span>                
-                <span><a href="https://chat.whatsapp.com/CLUuvoRuViAF77TGPbSAom" alt:"Job Nexus India Job Updates Whatsapp Group Link" class="icon-link2">
-                    <i class="fab fa-whatsapp"></i>
-                    </a></span>
-                <span><a href="https://t.me/jobnexusindia" alt:"Job Nexus India Telegram Channel Link" class="icon-link">
-                     <i class="fab fa-telegram"></i>
-                    </a></span>
-            </div>
         </div>
-</footer>
+    </div>
+
+
+
+    <div class="footer" >
+        <div class="box1">
+            <p class="footerheading">Important Notice</p>
+            <p class="footercontent">Job Nexus India emphasize ethical recruitment practices and we Job Nexus India will never charge candidates for any part of the recruitment process. Please be cautious of any fraudulent activities.</p>
+        </div>
+        <div class="box2">
+            <p class="footerheading">For any inquiries or assistance with technical issues while filling out the job application form, please contact us:</p>
+            <p class="footercontent">hello@jobnexusindia.com <br>7899586564 (Whatsapp)</p>
+        </div>
+        <div class="box3">
+            <p class="footerheading">Join us on your preferred social media platforms to never miss job updates</p>
+            <p class="footercontent" style="margin-top: 5px;">Click on the icons given below to join.</p>
+                <div class="icon-container">
+                    <span><a href="https://in.linkedin.com/company/jobnexusindia" alt:"Job Nexus India Job Updates Linkedin Company Page Link" class="icon-link">
+                        <i class="fab fa-linkedin-in"></i>
+                        </a></span>                
+                    <span><a href="https://chat.whatsapp.com/CLUuvoRuViAF77TGPbSAom" alt:"Job Nexus India Job Updates Whatsapp Group Link" class="icon-link2">
+                        <i class="fab fa-whatsapp"></i>
+                        </a></span>
+                    <span><a href="https://t.me/jobnexusindia" alt:"Job Nexus India Telegram Channel Link" class="icon-link">
+                         <i class="fab fa-telegram"></i>
+                        </a></span>
+                </div>
+        </div>
+    </div>
+
 
 
 </body>
