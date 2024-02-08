@@ -58,11 +58,6 @@
     /* transition: all 0.3s ease; */
     font-family: Arial, Helvetica, sans-serif; 
   }
-  /* nav ul li a,
-  nav ul li a{
-    color: black;
-    background: #e6e6fa;
-  } */
   nav .menu-btn i{
     color: black;
     font-size: 22px;
@@ -257,8 +252,7 @@ html {
     color: black;
     line-height: normal;
     }
-   
-   
+     
 .footercontent {
     font-family: 'inter', sans-serif;
     font-size: 18px;
@@ -278,7 +272,6 @@ html {
    .icon-link, .icon-link2 {
     font-size: 1rem;
     }
-   
    
   .icon-link, .icon-link2 {
     /* margin: 5px; */
@@ -335,17 +328,16 @@ html {
     }
     
   #hiringheadline{
-    font-size: 40px;
+    font-size: 45px;
     margin-bottom: 30px;
   }
-
 
   @media only screen and (max-width: 768px) {
     .hiringheader {
       font-size: 35px;
       line-height: 1.15;
       background-color: #;
-      margin-bottom: 30px;
+      margin-bottom: 0px;
       margin-top: 30px;
     }
   }
@@ -357,56 +349,13 @@ html {
       margin-top: 30px;
     }
   }    
-
-   
-
-.jdct{
-    font-family: 'montserrat';
-    font-size: 14px;
-    color: #666666;
-    font-weight: bold;
-}
-
-.jdtt{
-    font-family: 'inter';
-    font-size: 16px;
-    color: black;
-    font-weight: 500;
-}
-
-h2{
-    font-family: 'inter';
-    font-size: 20px;
-    color: black;
-}
-
-.jdjdjd:hover h2 { 
-    color: blue; } 
-
-
-@media (max-width: 920px) {
-    .jdjdjd{
-        max-width: 320px;
-        min-width: 320px;
-    }
-    h2{
-        font-size: 18px;
-    }
-    .jdct{
-        font-size: 12px;
-    }
-    .jdtt{
-        font-size: 14px;
-    }
-    #hiringheadline{
-        font-size: 25px;
-    }
-}
+  
 
 a {
     text-decoration: none;
     font-style: normal;
 }
+
 
 .lmn{
   display: flex;
@@ -487,7 +436,7 @@ h2{
     padding: 20px;
     width: 300px;
     border: none;
-    border: 2px solid black;
+    border: 1px solid black;
   }
 
   h2{
@@ -521,5 +470,4 @@ h2{
     margin-bottom: 30px;
   }
 }
-  
 
