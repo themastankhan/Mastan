@@ -335,7 +335,7 @@ html {
     }
     
   #hiringheadline{
-    font-size: 50px;
+    font-size: 40px;
   }
 
 
@@ -420,6 +420,7 @@ html {
     display: flex; 
     flex-wrap: wrap; 
     justify-content: center; 
+      align-items: center;
     column-gap: 20px;
 }
 
