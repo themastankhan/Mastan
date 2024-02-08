@@ -47,17 +47,6 @@
   <span id="hiringheadline" style="line-height: 1.25;">We're hiring the following positions for our client's</span>
 </h1>
 
-<div class="filtercontainer">
-   <div class="filterlinecontainer">Search Jobs by Location</div>
-    <div class="dropdown">
-    <select id="filter-option">
-      <option value="">All</option>
-      <option value="Hyderabad">Telangana</option>
-      <option value="Mumbai">Maharashtra</option>
-    </select>
-  </div>
-</div>
-
 <div class="jdjdjdjd">
     <a href="jd/0002.html"><div>    
         <div class="jdjdjd">
@@ -81,7 +70,7 @@
             </div>
         </div>
     </div></a>   
-      <a href="jd/0004.html"><div>    
+    <a href="jd/0004.html"><div>    
             <div class="jdjdjd">
                 <div class="newjd" >
                 <h2>Executive - HR</h2><br>
@@ -135,33 +124,6 @@
     </div>
 </div>
 
-<script>
-const filterOption = document.getElementById("filter-option");
-const jobCards = document.getElementsByClassName("jdjdjd");
-
-filterOption.addEventListener("change", () => {
-  let filterValue = filterOption.value.toLowerCase();
-  for (let i = 0; i < jobCards.length; i++) {
-    const jobCard = jobCards[i];
-    const experience = jobCard.getElementsByClassName("jdtt")[0].innerText.toLowerCase();
-    const jobTitle = jobCard.getElementsByTagName("h2")[0].innerText.toLowerCase();
-    const location = jobCard.getElementsByClassName("jdtt")[1].innerText.toLowerCase();
-    
-    if (filterValue === "reset") {
-      for (let j = 0; j < jobCards.length; j++) {
-        jobCards[j].style.display = "block";
-      }
-      filterOption.value = "";
-      return;
-    }
-
-    if (filterValue === "" || location.includes(filterValue) || experience.includes(filterValue) || jobTitle.includes(filterValue)) {
-      jobCard.style.display = "block";
-    } else {
-      jobCard.style.display = "none";
-    }
-  }
-});</script>
 
 </body>
 </html>
