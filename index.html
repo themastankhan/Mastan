@@ -47,57 +47,21 @@
   <span id="hiringheadline" style="line-height: 1.25;">We're hiring the following positions for our client's</span>
 </h1>
 
-<div style="margin-bottom: 40px;">
-    <div class="lmn">
-      <a href="jd/0002.html">
-        <div class="asd">
-          <h2>Functional Consultant - Dynamic 365 CRM - Marketing/Sales/Customer Service</h2>
-            <div class="dfg">
-              <div>
-                <P class="jdct">Work Location</P>
-                <p class="jdtt">Hyderabad</p>
-              </div>
-              <div>
-                <P class="jdct">Experience Required</P>
-                <p class="jdtt">7-8 Years</p>
-              </div>
-              <div>
-                <P class="jdct">Notice Period</P>
-                <p class="jdtt">Immediate Joiners preferred</p>
-              </div>
-              <div>
-                <P class="jdct">Date Posted</P>
-                <p class="jdtt" id="lastjdtt">09-02-2024</p>
-              </div>
-            </div>
-        </div>
-      </a>
+<div class="filter-container">
+  <label for="locationFilter">Filter Jobs by Location</label>
+  <div class="custom-select">
+    <select id="locationFilter">
+      <option value="all">All Locations</option>
+      <option value="Hyderabad">Hyderabad</option>
+      <option value="Bandra, Mumbai">Bandra, Mumbai</option>
+    </select>
+    <div class="select-icon">
+      <i class="fas fa-search"></i>
     </div>
-  <div class="lmn">
-    <a href="jd/0003.html">
-      <div class="asd">
-        <h2>Functional Consultant - Dynamic 365 CRM - Field Service</h2>
-          <div class="dfg">
-            <div>
-              <P class="jdct">Work Location</P>
-              <p class="jdtt">Hyderabad</p>
-            </div>
-            <div>
-              <P class="jdct">Experience Required</P>
-              <p class="jdtt">7-8 Years</p>
-            </div>
-            <div>
-              <P class="jdct">Notice Period</P>
-              <p class="jdtt">Immediate Joiners preferred</p>
-            </div>
-            <div>
-              <P class="jdct">Date Posted</P>
-              <p class="jdtt" id="lastjdtt">09-02-2024</p>
-            </div>
-          </div>
-      </div>
-    </a>
   </div>
+</div>  
+
+<div style="margin-bottom: 40px;">
   <div class="lmn">
     <a href="jd/0004.html">
       <div class="asd">
@@ -173,6 +137,56 @@
         </div>
       </a>
   </div>
+      <div class="lmn">
+      <a href="jd/0002.html">
+        <div class="asd">
+          <h2>Functional Consultant - Dynamic 365 CRM - Marketing/Sales/Customer Service</h2>
+            <div class="dfg">
+              <div>
+                <P class="jdct">Work Location</P>
+                <p class="jdtt">Hyderabad</p>
+              </div>
+              <div>
+                <P class="jdct">Experience Required</P>
+                <p class="jdtt">7-8 Years</p>
+              </div>
+              <div>
+                <P class="jdct">Notice Period</P>
+                <p class="jdtt">Immediate Joiners preferred</p>
+              </div>
+              <div>
+                <P class="jdct">Date Posted</P>
+                <p class="jdtt" id="lastjdtt">09-02-2024</p>
+              </div>
+            </div>
+        </div>
+      </a>
+    </div>
+  <div class="lmn">
+    <a href="jd/0003.html">
+      <div class="asd">
+        <h2>Functional Consultant - Dynamic 365 CRM - Field Service</h2>
+          <div class="dfg">
+            <div>
+              <P class="jdct">Work Location</P>
+              <p class="jdtt">Hyderabad</p>
+            </div>
+            <div>
+              <P class="jdct">Experience Required</P>
+              <p class="jdtt">7-8 Years</p>
+            </div>
+            <div>
+              <P class="jdct">Notice Period</P>
+              <p class="jdtt">Immediate Joiners preferred</p>
+            </div>
+            <div>
+              <P class="jdct">Date Posted</P>
+              <p class="jdtt" id="lastjdtt">09-02-2024</p>
+            </div>
+          </div>
+      </div>
+    </a>
+  </div>
 </div>
 
 <div class="footer" >
@@ -201,6 +215,23 @@
     </div>
 </div>
 
+<script>
+  // Use JavaScript to listen for changes in the dropdown menu
+  document.getElementById('locationFilter').addEventListener('change', function() {
+    const selectedLocation = this.value; // Get the selected location
+
+    // Loop through all job details and show/hide based on the selected location
+    const jobDetails = document.querySelectorAll('.lmn');
+    jobDetails.forEach(function(job) {
+      const location = job.querySelector('.jdtt').textContent.trim(); // Get the location from the job details
+      if (selectedLocation === 'all' || location === selectedLocation) {
+        job.style.display = 'flex'; // Show the job details
+      } else {
+        job.style.display = 'none'; // Hide the job details
+      }
+    });
+  });
+</script>  
 
 </body>
 </html>
