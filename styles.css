@@ -472,7 +472,7 @@ h2{
 }
 
 .filter-container {
-  border: 3px solid beiges;
+  border: 3px solid beige;
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 10px;
@@ -529,7 +529,7 @@ option{
   .filter-container {
     max-width: 260px;
     margin-bottom: 20px;
-    border: 3px solid beiges;
+    border: 3px solid beige;
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 10px;
