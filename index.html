@@ -15,7 +15,7 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link href='https://fonts.googleapis.com/css?family=Arima Madurai' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,6 +23,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
 <title>Job Nexus India</title>
 <meta property="og:description" content="Explore exciting job opportunities at Job Nexus India's clients in multiple locations across India. Click on a position to view job details and apply.">
 <meta property="og:image" content="https://github.com/themastankhan/Mastan/raw/main/Job-Nexus-India-Logo.png">
@@ -43,27 +46,37 @@
     </ul>
 </nav>
 
-<h1 class="hiringheader">
-  <span id="hiringheadline" style="line-height: 1.25;">We're hiring the following positions for our client's</span>
+<h1>We're hiring the following positions for our client's
 </h1>
 
+<div class="flcc">
 <div class="filter-container">
   <label for="locationFilter">Filter Jobs by Location</label>
   <div class="custom-select">
     <select id="locationFilter">
       <option value="all">All Locations</option>
+      <option value="Bengaluru">Bengaluru</option>
+      <option value="Mumbai">Mumbai</option>
       <option value="Hyderabad">Hyderabad</option>
-      <option value="Bandra, Mumbai">Bandra, Mumbai</option>
-      <option value="HSR Layout, Bengaluru">Bengaluru</option>
     </select>
-    <div class="select-icon">
-      <i class="fa-solid fa-caret-down"></i>
-    </div>
   </div>
-</div>  
+</div>
+<div class="department-container">
+  <label for="departmentFilter">Filter Jobs by Department</label>
+  <div class="custom-select">
+    <select id="departmentFilter">
+      <option value="all">All Departments</option>
+      <option value="Customer Sales/Support">Customer Sales/Support</option>
+      <option value="Human Resources">Human Resources</option>
+      <option value="IT Consultant">IT Consultant</option>
+      <option value="Accounts">Accounts</option>
+    </select>
+  </div>
+</div>
+</div>
 
-<div style="margin-bottom: 40px;">
-      <div class="lmn">
+  <div class="lmnn">
+    <div class="lmn" data-location="Bengaluru" data-department="Customer Sales/Support">
     <a href="jd/0010.html">
       <div class="asd">
         <h2>Customer Support Associate</h2>
@@ -88,7 +101,7 @@
       </div>
     </a>
   </div>
-    <div class="lmn">
+    <div class="lmn" data-location="Mumbai" data-department="Human Resources">
     <a href="jd/0009.html">
       <div class="asd">
         <h2>Junior HR Executive</h2>
@@ -113,7 +126,7 @@
       </div>
     </a>
   </div>
-      <div class="lmn">
+      <div class="lmn" data-location="Mumabi" data-department="Customer Sales/Support">
     <a href="jd/0007.html">
       <div class="asd">
         <h2>Retail Sales Executive</h2>
@@ -138,7 +151,7 @@
       </div>
     </a>
   </div>
-      <div class="lmn">
+      <div class="lmn" data-location="Mumabi" data-department="Customer Sales/Support">
     <a href="jd/0008.html">
       <div class="asd">
         <h2>Retail Sales Assistant</h2>
@@ -163,7 +176,7 @@
       </div>
     </a>
   </div>
-    <div class="lmn">
+    <div class="lmn" data-location="Mumbai" data-department="Human Resources">
       <a href="jd/0006.html">
         <div class="asd">
             <h2>Lead Compensation and Benefits</h2>
@@ -188,7 +201,7 @@
         </div>
       </a>
   </div>
-  <div class="lmn">
+  <div class="lmn" data-location="Mumbai" data-department="Human Resources">
     <a href="jd/0004.html">
       <div class="asd">
         <h2>Executive - HR</h2>
@@ -213,7 +226,7 @@
       </div>
     </a>
   </div>
-  <div class="lmn">
+  <div class="lmn" data-location="Mumbai" data-department="Accounts">
       <a href="jd/0005.html">
         <div class="asd">
             <h2>Accountant / Senior Executive - Taxations</h2>
@@ -238,7 +251,7 @@
         </div>
       </a>
   </div>
-      <div class="lmn">
+      <div class="lmn" data-location="Hyderabad" data-department="IT Consultant">
       <a href="jd/0002.html">
         <div class="asd">
           <h2>Functional Consultant - Dynamic 365 CRM - Marketing/Sales/Customer Service</h2>
@@ -263,7 +276,7 @@
         </div>
       </a>
     </div>
-  <div class="lmn">
+  <div class="lmn" data-location="Hyderabad" data-department="IT Consultant">
     <a href="jd/0003.html">
       <div class="asd">
         <h2>Functional Consultant - Dynamic 365 CRM - Field Service</h2>
@@ -289,6 +302,7 @@
     </a>
   </div>
 </div>
+
 
 <div class="footer" >
     <div class="box1">
@@ -317,22 +331,36 @@
 </div>
 
 <script>
-  // Use JavaScript to listen for changes in the dropdown menu
-  document.getElementById('locationFilter').addEventListener('change', function() {
-    const selectedLocation = this.value; // Get the selected location
+document.addEventListener('DOMContentLoaded', function() {
+  const jobDetails = document.querySelectorAll('.lmn');
 
-    // Loop through all job details and show/hide based on the selected location
-    const jobDetails = document.querySelectorAll('.lmn');
+  // Listen for a change in location filter
+  document.getElementById('locationFilter').addEventListener('change', function() {
+    filterJobs();
+  });
+
+  // Listen for a change in department filter
+  document.getElementById('departmentFilter').addEventListener('change', function() {
+    filterJobs();
+  });
+
+  function filterJobs() {
+    const selectedLocation = document.getElementById('locationFilter').value;
+    const selectedDepartment = document.getElementById('departmentFilter').value;
+
     jobDetails.forEach(function(job) {
-      const location = job.querySelector('.jdtt').textContent.trim(); // Get the location from the job details
-      if (selectedLocation === 'all' || location === selectedLocation) {
+      const location = job.dataset.location;
+      const department = job.dataset.department;
+
+      if ((selectedLocation === 'all' || location === selectedLocation) && (selectedDepartment === 'all' || department === selectedDepartment)) {
         job.style.display = 'flex'; // Show the job details
       } else {
         job.style.display = 'none'; // Hide the job details
       }
     });
-  });
-</script>  
+  }
+});
+</script>
 
 </body>
 </html>
