@@ -435,9 +435,9 @@ h2{
 } 
 
 .lmnn{
-  margin-bottom: 30%;
+  margin-bottom: 20%;
   margin-left: 20%;
-  margin-top: -49.3%;
+  margin-top: -20.3%;
   background: transparent;
 }
 
@@ -553,7 +553,7 @@ h2{
   flex-wrap: wrap;
   justify-content: center;
   column-gap: 30px;
-  margin-bottom: 30%;
+  margin-bottom: 20%;
   margin-top: 40px;
   margin-left: 8.8%;
 }
