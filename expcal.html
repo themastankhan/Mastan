@@ -66,8 +66,8 @@
     <div id="sections">
         <!-- Initial section -->
         <div class="section">
-        <input type="text" placeholder="From Date (DD-MM-YYYY, MM-YYYY, or YYYY)" class="fromDate">
-        <input type="text" placeholder="To Date (DD-MM-YYYY, MM-YYYY, or YYYY)" class="toDate">
+        <input type="text" placeholder="From Date (DD-MM-YYYY, MM-YYYY, or YYYY)" class="fromDate" inputmode="numeric">
+        <input type="text" placeholder="To Date (DD-MM-YYYY, MM-YYYY, or YYYY)" class="toDate" inputmode="numeric">
         </div>
     </div>
 </div>
@@ -82,8 +82,8 @@
     const section = document.createElement('div');
     section.classList.add('section');
     section.innerHTML = `
-      <input type="text" placeholder="From Date (DD-MM-YYYY, MM-YYYY, or YYYY)" class="fromDate">
-      <input type="text" placeholder="To Date (DD-MM-YYYY, MM-YYYY, or YYYY)" class="toDate">
+      <input type="text" placeholder="From Date (DD-MM-YYYY, MM-YYYY, or YYYY)" class="fromDate" inputmode="numeric">
+      <input type="text" placeholder="To Date (DD-MM-YYYY, MM-YYYY, or YYYY)" class="toDate" inputmode="numeric">
       ${sections.children.length > 0 ? '<button onclick="removeSection(this)">Remove</button>' : ''}
     `;
     sections.appendChild(section);
