@@ -24,7 +24,7 @@
   .section {
     margin-bottom: 20px;
   }
-  input[type="text"], input[type="number"] {
+  input[type="text"] {
     width: 120px;
     padding: 5px;
   }
@@ -41,7 +41,6 @@
     box-sizing: border-box;
     margin-bottom: 20px;
   }
-
 
   @media only screen and (max-width: 900px) {
     #calculator {
@@ -61,39 +60,35 @@
 </head>
 <body>
 
-
 <h2>Experience Calculator</h2>
 <div id="result"></div>
 <div id="calculator">
     <div id="sections">
         <!-- Initial section -->
         <div class="section">
-        <input type="number" placeholder="From Date (DD-MM-YYYY, MM-YYYY, or YYYY)" class="fromDate">
-        <input type="number" placeholder="To Date (DD-MM-YYYY, MM-YYYY, or YYYY)" class="toDate">
+        <input type="text" placeholder="From Date (DD-MM-YYYY, MM-YYYY, or YYYY)" class="fromDate">
+        <input type="text" placeholder="To Date (DD-MM-YYYY, MM-YYYY, or YYYY)" class="toDate">
         </div>
     </div>
-
-
-
 </div>
 
 <button onclick="addSection()">Add Section</button>
 <button onclick="calculateExperience()">Calculate Experience</button>
 <button onclick="resetForm()">Reset Form</button>
+
 <script>
   function addSection() {
     const sections = document.getElementById('sections');
     const section = document.createElement('div');
     section.classList.add('section');
     section.innerHTML = `
-      <input type="number" placeholder="From Date (DD-MM-YYYY, MM-YYYY, or YYYY)" class="fromDate">
-      <input type="number" placeholder="To Date (DD-MM-YYYY, MM-YYYY, or YYYY)" class="toDate">
+      <input type="text" placeholder="From Date (DD-MM-YYYY, MM-YYYY, or YYYY)" class="fromDate">
+      <input type="text" placeholder="To Date (DD-MM-YYYY, MM-YYYY, or YYYY)" class="toDate">
       ${sections.children.length > 0 ? '<button onclick="removeSection(this)">Remove</button>' : ''}
     `;
     sections.appendChild(section);
     attachInputListeners(); // Attach input listeners to the new section
   }
-
 
   function removeSection(button) {
     const section = button.parentNode;
@@ -101,25 +96,20 @@
     calculateExperience(); // Recalculate when a section is removed
   }
 
-
   function calculateExperience() {
     const sections = document.querySelectorAll('.section');
     let totalDays = 0;
     let validSectionsCount = 0;
 
-
     sections.forEach(section => {
       const fromDate = section.querySelector('.fromDate').value.trim();
       const toDate = section.querySelector('.toDate').value.trim();
 
-
       if (fromDate && toDate) {
         validSectionsCount++;
 
-
         const from = parseDate(fromDate);
         const to = parseDate(toDate);
-
 
         const diffTime = Math.abs(to - from);
         const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
@@ -127,31 +117,26 @@
       }
     });
 
-
     if (validSectionsCount === 0) {
       const resultDiv = document.getElementById('result');
       resultDiv.innerHTML = '';
       return;
     }
 
-
     const years = Math.floor(totalDays / 365);
     const remainingDays = totalDays % 365;
     const months = Math.floor(remainingDays / 30);
     const days = remainingDays % 30;
 
-
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = `Total Experience: ${years} years, ${months} months, ${days} days`;
   }
-
 
   function parseDate(dateStr) {
     const parts = dateStr.split('-').map(part => parseInt(part));
     let day = 1; // Default day if not provided
     let month = 1; // Default month if not provided
     let year = parts[0];
-
 
     if (parts.length === 3) {
       day = parts[0];
@@ -167,13 +152,10 @@
       }
     }
 
-
     if (isNaN(month)) month = 1;
-
 
     return new Date(year, month - 1, day);
   }
-
 
   // Attach input event listeners to all date input fields
   function attachInputListeners() {
@@ -184,10 +166,8 @@
     });
   }
 
-
   // Initially attach input listeners to the existing section
   attachInputListeners();
-
 
   // Reset form function
   function resetForm() {
@@ -196,12 +176,10 @@
       input.value = '';
     });
 
-
     // Clear result
     document.getElementById('result').innerHTML = '';
   }
 </script>
-
 
 </body>
 </html>
