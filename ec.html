@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experience Calculator</title>
+<style>
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  /* Decrease the size of the 1st and 2nd columns */
+  th:nth-child(1),
+  td:nth-child(1),
+  th:nth-child(2),
+  td:nth-child(2) {
+    width: 15%;
+  }
+  /* Increase the width of the 3rd column */
+  th:nth-child(3),
+  td:nth-child(3) {
+    width: 25%;
+  }
+  /* Increase the width of the Remarks input field */
+  td:nth-child(4) input {
+    width: 100%;
+  }
+  #total {
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<table id="experienceTable">
+  <tr>
+    <th>From Date</th>
+    <th>To Date</th>
+    <th>Experience</th>
+    <th>Name and Location of company / Job Title</th>
+  </tr>
+  <tr>
+    <td><input type="date" class="fromDate"></td>
+    <td><input type="date" class="toDate"></td>
+    <td class="experience"></td>
+    <td><input type="text" class="remarks"></td>
+  </tr>
+</table>
+<br>
+<div id="total">
+    Total Experience: <span id="totalYears">0 years</span>, <span id="totalMonths">0 months</span>, <span id="totalDays">0 days</span>
+  </div>
+
+<br>
+<button onclick="addRow()">Add Section</button>
+<button onclick="removeRow()">Remove Section</button>
+<button onclick="resetValues()">Reset Values</button>
+<button onclick="copyValues()">Copy Values</button>
+
+<script>
+  function calculateExperience(row) {
+    const fromDate = new Date(row.querySelector('.fromDate').value);
+    const toDate = new Date(row.querySelector('.toDate').value);
+    const timeDiff = Math.abs(toDate.getTime() - fromDate.getTime());
+    const totalDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+    const years = Math.floor(totalDays / 365);
+    const months = Math.floor((totalDays % 365) / 30);
+    const days = totalDays - (years * 365) - (months * 30);
+    return `${years} years, ${months} months, ${days} days`;
+  }
+
+  function updateTotalExperience() {
+    const rows = document.querySelectorAll('#experienceTable tr');
+    let totalYears = 0, totalMonths = 0, totalDays = 0;
+    rows.forEach((row, index) => {
+      if (index > 0) {
+        const experience = row.querySelector('.experience').textContent.split(', ');
+        totalYears += parseInt(experience[0]);
+        totalMonths += parseInt(experience[1]);
+        totalDays += parseInt(experience[2]);
+      }
+    });
+    totalMonths += Math.floor(totalDays / 30);
+    totalDays = totalDays % 30;
+    totalYears += Math.floor(totalMonths / 12);
+    totalMonths = totalMonths % 12;
+    document.getElementById('totalYears').textContent = totalYears + ' years';
+    document.getElementById('totalMonths').textContent = totalMonths + ' months';
+    document.getElementById('totalDays').textContent = totalDays + ' days';
+  }
+
+  function addRow() {
+    const table = document.getElementById('experienceTable');
+    const newRow = table.insertRow(-1);
+    newRow.innerHTML = `
+      <td><input type="date" class="fromDate"></td>
+      <td><input type="date" class="toDate"></td>
+      <td class="experience"></td>
+      <td><input type="text" class="remarks"></td>
+    `;
+    newRow.addEventListener('change', function() {
+      const experience = calculateExperience(newRow);
+      newRow.querySelector('.experience').textContent = experience;
+      updateTotalExperience();
+    });
+    // Trigger change event on the newly added row to calculate experience and update total
+    newRow.dispatchEvent(new Event('change'));
+  }
+
+  function removeRow() {
+    const table = document.getElementById('experienceTable');
+    if (table.rows.length > 2) {
+      table.deleteRow(-1);
+      updateTotalExperience();
+    } else {
+      alert('Cannot remove the last row!');
+    }
+  }
+
+  function resetValues() {
+    const inputs = document.querySelectorAll('#experienceTable input');
+    inputs.forEach(input => input.value = '');
+    const experiences = document.querySelectorAll('.experience');
+    experiences.forEach(experience => experience.textContent = '');
+    updateTotalExperience();
+  }
+
+  function copyValues() {
+    const rows = document.querySelectorAll('#experienceTable tr');
+    let copiedValues = '';
+    rows.forEach((row, index) => {
+      if (index > 0) {
+        const fromDate = row.querySelector('.fromDate').value;
+        const toDate = row.querySelector('.toDate').value;
+        const experience = row.querySelector('.experience').textContent;
+        const remarks = row.querySelector('.remarks').value;
+        copiedValues += `${fromDate} - ${toDate} = ${experience} | ${remarks}\n`;
+      }
+    });
+    navigator.clipboard.writeText(copiedValues).then(() => {
+      alert('Values copied successfully!');
+    }).catch(err => {
+      console.error('Failed to copy: ', err);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const inputs = document.querySelectorAll('#experienceTable input');
+    inputs.forEach(input => input.addEventListener('change', function() {
+      const row = input.closest('tr');
+      const experience = calculateExperience(row);
+      row.querySelector('.experience').textContent = experience;
+      updateTotalExperience();
+    }));
+  });
+</script>
+
+</body>
+</html>
