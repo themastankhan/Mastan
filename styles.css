@@ -16,7 +16,7 @@
     background: white;
     align-items: center;
     justify-content: space-between;
-    padding: 0 125px 0 130px;
+    padding: 0 84px 0 70px;
     flex-wrap: wrap;
     border-bottom: 1px solid black;
   }
@@ -26,6 +26,7 @@
     font-family: 'arima madurai';
     font-weight: bold;
     padding-top: 2px;
+    padding-left: 10px;
   }
   
   .logo{
@@ -149,6 +150,7 @@
       font-size: 20px;
       font-weight: bold;
       padding-top: 1.5px;
+      margin-left: -10px;
     }
     nav{
       padding-left: 20px;
@@ -198,7 +200,7 @@ html {
     padding: 20px;
     display: flex;
     justify-content: center;
-    column-gap: 40px;
+    column-gap: 20px;
     background-color: white;
     flex-wrap: wrap;
     /* box-shadow:  0 -2px 5px rgba(0, 0, 0, 0.8); */
@@ -292,13 +294,13 @@ html {
   }   
    
 .box3 {
-    width: 350px;
+    width: 430px;
 }
 .box1 {
-        width: 400px;
+        width: 460px;
 }
 .box2 {
-        width: 400px;
+        width: 440px;
 }
   
   .content-wrapper { flex: 1; padding: 0 30px; } 
