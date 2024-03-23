@@ -410,7 +410,7 @@ a {
 
 h2{
   font-family: 'Roboto';
-  color: black;
+  color: blue;
   font-size: 22px;
   margin-bottom: 12px;
   font-weight: 500;
@@ -431,13 +431,11 @@ h2{
   font-weight: 500;
 }
 
-.asd:hover { 
-  border-color: #007bff;
+.asd { 
+  border-color: #1155cc;
   }
 
-.asd:hover h2 { 
-  color: #007bff; 
-} 
+
 
 .lmnn{
   margin-bottom: 20%;
@@ -475,7 +473,7 @@ h2{
     font-family: 'roboto';
     font-size: 18px;
     margin-bottom: 15px;
-    color: #007bff;
+    color: blue;
   }
   
   .jdct{
@@ -708,7 +706,7 @@ option{
     font-size: 22px;
     margin-bottom: 15px;
     font-weight: 500;
-    color: #007bff;
+    color: blue;
   }
   
   .jdct{
